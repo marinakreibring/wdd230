@@ -7,7 +7,7 @@ body{
 }
 header{
     display: flex;
-    background-color: steelblue;    
+    background-color:  rgb(13, 76, 128);  
     height: 150px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #fec001;
@@ -28,25 +28,26 @@ ul{
     margin-left: 50px;
 }
 h2{
-    color: rgb(12, 73, 122);
+    color: rgb(8, 55, 94);
     font-size: 2em;
     font-weight: bold;
     text-align: center;
 }
 footer{
-    background-color: steelblue;    
+    background-color: rgb(8, 55, 94);   
     border-radius: 10px;
     box-shadow: 5px 5px 10px #fec001;
     line-height: 0.8;
 }
-h3{
+#copy{
     color: #fec001;
     font-size: 1.5em;
     text-align: center;
     padding-top: 1em;
 }
-p{
+#update{
     font-style: italic;
+    color: beige;
     text-align: center;
     padding-bottom: 1em;
 }
