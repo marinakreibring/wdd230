@@ -1,47 +1,43 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 body{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     max-width : 600px;
     margin : 50px auto;
-    font-family : 'Times New Roman', Times, serif;
+    font-family : 'Merriweather', Times, serif;
 }
 header{
     display: flex;
     background-color:  rgb(8, 55, 94);  
     height: 150px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #fec001;
 }
 img{
-    max-height: 120px;
-    float: left;
-    margin: 20px 30px;
-    border-radius: 10px;
-    border: 1px solid #fec001;
+    max-height: fit-content;    
 }
 h1{
    text-align : center;
    color : #fec001;
-   margin: 50px auto;
+   font-size: 1.5rem;
+   margin: auto auto;
 }
 ul{
-    margin-left: 50px;
+    margin-left: 10px;
 }
 h2{
     color: rgb(8, 55, 94);
-    font-size: 2em;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
 }
 footer{
     background-color: rgb(8, 55, 94);   
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #fec001;
     line-height: 0.8;
 }
 #copy{
     color: #fec001;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     padding-top: 1em;
 }

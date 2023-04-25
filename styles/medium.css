@@ -1,0 +1,24 @@
+@media only screen and (min-width: 32.5em) {
+    header, footer{       
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #fec001;
+    }
+    img{        
+        float: left;
+        margin: 20px;
+        border-radius: 10px;
+        border: 2px solid #fec001;
+    }
+    h1{
+       font-size: 2.5em;
+    }
+    h2{
+        font-size: 2em;        
+    }
+    ul{
+        margin-left: 50px;
+    }
+    #copy{
+        font-size: 1.5em;       
+    }    
+}
