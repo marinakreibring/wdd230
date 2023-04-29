@@ -1,0 +1,22 @@
+@media only screen and (min-width: 37.5em) {
+    body{
+        margin : 20px 30px;
+    }
+    h1{
+        font-size: 2em;
+        padding-top: 1.5em;
+    }
+    h2{
+        font-size: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(3){
+        grid-column: span 2;
+    }
+    img{
+        max-width: 250px;
+    }
+}
