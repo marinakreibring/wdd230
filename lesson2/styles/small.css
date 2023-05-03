@@ -39,13 +39,14 @@ h4{
 }
 
 img{
-    max-width: 300px;
+    max-inline-size: 98%;
+    block-size: auto;
     border: 1pt solid black;
     margin: 0 auto; 
     display: block;
 }
 p{
-    margin: 5px;
+    margin: 1ch;
 }
 footer{
     line-height: 0.8;
