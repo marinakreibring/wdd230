@@ -10,14 +10,14 @@ header, footer{
 h1{
    text-align : center;
    color : #fec001;
-   font-size: 1rem;
-   padding-top: 0.8rem;
+   font-size: clamp(1rem, 0.75rem + 1.5vw, 2.5rem);
+   padding-top: 1ch;
 }
 h2{
     color: beige;
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2.5rem);
     text-align: center;
-    padding-bottom: 0.8rem;
+    padding-bottom: 1ch;
 }
 main{
     display: grid;
@@ -30,7 +30,7 @@ section{
 }
 h3{
     color: rgb(8, 55, 94);
-    font-size: 1.3rem;
+    font-size: clamp(1.3rem, 0.5rem + 1.5vw, 1.8rem);
     text-align: center;
 }
 h4{
@@ -39,7 +39,7 @@ h4{
 }
 
 img{
-    max-inline-size: 98%;
+    max-inline-size: 96%;
     block-size: auto;
     border: 1pt solid black;
     margin: 0 auto; 
@@ -47,9 +47,7 @@ img{
 }
 p{
     margin: 1ch;
-}
-footer{
-    line-height: 0.8;
+    font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
 }
 #copy{
     color: #fec001;
@@ -58,9 +56,8 @@ footer{
     padding-top: 0.8rem;
 }
 #update{
-    font-style: italic;
     font-size: 0.8rem;
     color: beige;
     text-align: center;
-    padding: 0.8em;
+    padding-bottom: 0.8rem;
 }
