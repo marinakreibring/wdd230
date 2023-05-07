@@ -104,6 +104,12 @@ p, li{
 #typography h5{
     font-family: 'Lato', Times, sans-serif;
     font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3.5rem);
+    color: #1E417C;
+    text-align: center;
+}
+#typography h6{
+    font-family: 'Lato', Times, sans-serif;
+    font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3.5rem);
     background-color: #1E417C;
     color: #adaeae;
     text-align: center;
