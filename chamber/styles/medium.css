@@ -1,0 +1,75 @@
+@media only screen and (min-width: 35rem){
+    #title h1{    
+        font-size: clamp(1.5rem, 0.75rem + 1.5vw, 2.5rem);         
+    }
+    #title h2{    
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem);    
+    }
+    .logo{
+        max-inline-size: 60%;
+    }
+    #socialMedia a img{
+        max-inline-size: 50%;
+    }
+    .gridView{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;        
+    }
+    .hero{
+        grid-column: span 2;
+    }
+    .news{
+        grid-row-start: 2;
+        grid-column: span   2;
+    }
+    .spotlight{
+        grid-row-start: 3;
+        grid-column: span 2;
+        grid-template-columns: 1fr 1fr;
+    }
+    .join{
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid rgba(0,0,0,0.5);
+        grid-row-start: 4;
+        grid-column: span 2;
+    }
+    /*footer*/
+    footer{
+        font-size: clamp(0.6rem, 0.75rem + 1.5vw, 1rem);
+        grid-template-columns: auto 30%;
+    }
+    #copyright{
+        grid-column: span 2;
+    }
+    #address{
+        display: flex;
+        text-align: center;
+        font-style: italic;
+    }
+    #address img{
+        float: inline-start;
+        max-inline-size: 20%;
+    }
+    #contactInfo{
+        text-align: center;
+        align-self: center;
+    }
+    #copyright{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 2rem 2rem;
+        margin: .5rem 2vw;
+        }
+    #copyright p:nth-child(4){
+        grid-column: span 3;
+        text-align: center;
+    }
+    #copyright p, h4{
+        align-self: center;
+    }
+    #copyright h4{
+        border-left: 2px solid #adaeae;
+        border-right: 2px solid #adaeae;
+    }
+}

@@ -1,0 +1,171 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    margin: 2vw 2vw;
+    font-size: 16px;
+}
+/*Palette URL: https://coolors.co/110802-13110d-1e417c-c51a21-f5d913-adaeae*/
+header{
+    background-color: #1E417C;
+    display: grid;
+    grid-template-columns: auto 40% auto auto;
+    grid-template-rows: auto auto;
+}
+.logo{
+    max-inline-size: 80%;
+    block-size: auto;
+    border-radius: 50%;
+    border: 1px solid #adaeae;
+    align-self: center;
+    margin: .5rem 2vw;
+}
+#title{
+    text-align: left; 
+    color: #adaeae; 
+    font-family: 'Lato', Times, sans-serif;
+    align-self: center;
+}
+#title h1{    
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    line-height: 0.5;  
+}
+#title h2{    
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 0.8rem);    
+}
+#socialMedia {    
+    display: flex;
+    flex-direction: row;    
+    align-self: center;
+    margin: auto 2vw;
+}
+#socialMedia a img{
+    max-inline-size: 80%;
+    border-radius: 50%;
+    border: 1px solid #adaeae;    
+}
+/*css for hamburger button in navigation*/
+nav button{
+    margin: auto 2vw;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.3);
+    font-size: 2rem;
+    color: #F5D913;
+}
+nav{
+    background-color: #1E417C;
+    display: grid;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #adaeae;
+    font-family: 'Hind', Arial, serif;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #F5D913;
+}
+nav ul li a:hover{
+    background-color:  rgba(0,0,0,0.3);
+}
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display: block;
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+.date{
+    grid-column: 1 / span 5;
+    text-align: center;
+    padding: 0.5rem;
+    margin: .5rem 2vw;
+    background-color: rgba(0,0,0,0.2);
+    color: #F5D913;
+    font-family: 'Hind', Arial, serif;
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1rem);
+}
+/* css for main grid*/
+.gridView{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: .5rem;
+    margin: .5rem 2vw;
+}
+.hero, .event, .weather, .news, .spotlight{
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.spotlight{
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+.spotlight div{
+    margin: .3rem 1vw;
+    border: 1px solid rgba(0,0,0,0.5)
+}
+.join{
+    display: none;
+}
+.spot3{
+    display: none;
+}
+/*css for footer*/
+footer{
+    background-color: #1E417C;
+    color: #adaeae;
+    font-family: 'Hind', Arial, serif;
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 0.8rem);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#address{
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+#address img{
+    max-inline-size: 30%;
+}
+#contactInfo{
+    display: block;
+    text-align: center;
+}
+#contactInfo a{
+    color: #F5D913;
+    text-decoration: none;
+}
+#contactInfo a:hover{
+    color: #c51a21;
+    text-decoration: underline;
+}
+#copyright{
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+
+

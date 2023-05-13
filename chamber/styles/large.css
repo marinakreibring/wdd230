@@ -1,0 +1,108 @@
+@media only screen and (min-width: 64rem){
+    header{
+        grid-template-columns: 10% 25% auto 10%;
+        grid-template-rows: 150px auto;
+    }
+    header img{
+        max-height: 80%;
+    }
+    #title h1{    
+        font-size: clamp(2rem, 0.75rem + 1.5vw, 2.5rem);
+        line-height: 0.1;
+    }
+    #title h2{    
+        font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3rem);    
+    }    
+    #socialMedia{
+        grid-column: 4;
+        text-align: left;
+    }
+    #socialMedia a img{
+        max-inline-size: 50px;
+        margin: .2vw;
+    }
+    nav{
+        grid-column: 3;
+        grid-row-start: 1;
+        align-self: center;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav{
+        grid-column: 3;
+        display: flex;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        font-size: clamp(0.8rem, 0.5rem + 1vw, 1.5rem);
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .5rem 1rem;      
+    }
+    .date{
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem);
+    }
+    .gridView{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;        
+    }
+    .hero{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row: span 2;
+    }
+    .event{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .weather{
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .join{
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .news{
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    .spotlight{
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row: span 3;
+    }
+    .spotlight{
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    .spotlight div{
+        margin: .3rem 1vw;
+        border: 1px solid rgba(0,0,0,0.5)
+    }
+    .spot3{
+        display: block;
+    }
+    footer{
+        grid-template-columns: 2fr 1fr;
+    }
+    #address img{
+        max-inline-size: 100px;
+        margin: .5rem 2vw;
+    }    
+    #address{
+        text-align: right;
+    }
+    #contactInfo{
+        text-align: left;
+    }
+    #copyright{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 2rem;
+    }
+    #copyright p:nth-child(4){
+        grid-column: 4;
+        border-left: 2px solid #adaeae;
+    }
+}
