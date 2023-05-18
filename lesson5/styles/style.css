@@ -18,7 +18,7 @@ h1, h2 {
 }
 main {	
 	padding: 1rem;
-	background-color: steelblue;
+	background-color: #1e417c;
 	display: flex;
 	flex-direction: column;
 }
@@ -34,9 +34,8 @@ label{
 .delete {
 	width: fit-content;
 }
-.input {
-	display: flex;
-	gap: 1rem;
+.input {	
+	gap: 1rem;	
 }
 .list {
 	padding: 0.5rem;
