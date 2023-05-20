@@ -31,6 +31,7 @@
         display: block;
         box-sizing: border-box;
         position: relative;
+        height: 270px;
         border: 0.5rem solid #15295D;
         grid-row-start: 4;
         grid-column: span 2;
@@ -108,7 +109,7 @@
         align-self: center;
     }
     #copyright h4{
-        border-left: 2px solid #adaeae;
-        border-right: 2px solid #adaeae;
+        border-left: 2px solid #fefefe;
+        border-right: 2px solid #fefefe;
     }
 }

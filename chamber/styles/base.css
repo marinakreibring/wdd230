@@ -7,7 +7,7 @@ body{
     font-size: 16px;
 }
 #banner{
-    display: block;
+    display: none;
     background-color: #F5D913;
     color: #000000;
     padding: 1ch;
@@ -209,7 +209,6 @@ main p{
     width: 90%;
     margin: 0 auto;
 }
-
 /*css for footer*/
 footer{
     background-color: #15295D;
@@ -229,6 +228,7 @@ footer{
 }
 #address h3{
     color: #fefefe;
+    font-style: italic;
 }
 #contactInfo{
     display: block;

@@ -38,3 +38,8 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.querySelector("#currentDate").textContent = fulldate;
+//script for banner
+const today = d.getDay();
+if (today===1 || today===2){
+	document.getElementById("banner").style.display = "block";
+}

@@ -63,6 +63,7 @@
     .join{
         grid-row-start: 3;
         grid-column-start: 1;
+        height: 100%;
     }
     .news{
         grid-row-start: 3;
@@ -84,15 +85,12 @@
     .spot3{
         display: block;
     }
-    footer{
-        grid-template-columns: 2fr 1fr;
-    }
     #address img{
         max-inline-size: 100px;
-        margin: .5rem 2vw;
     }    
     #address{
-        text-align: right;
+        text-align: left;
+        margin: 0.5rem auto;
     }
     #contactInfo{
         text-align: left;
@@ -103,6 +101,6 @@
     }
     #copyright p:nth-child(4){
         grid-column: 4;
-        border-left: 2px solid #adaeae;
+        border-left: 2px solid #fefefe;
     }
 }
