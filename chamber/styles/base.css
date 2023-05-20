@@ -227,6 +227,9 @@ footer{
 #address img{
     max-inline-size: 30%;
 }
+#address h3{
+    color: #fefefe;
+}
 #contactInfo{
     display: block;
     text-align: center;
