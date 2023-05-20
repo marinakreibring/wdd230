@@ -13,7 +13,7 @@
     }
     .gridView{
         grid-template-columns: 60% 40%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;        
+        grid-template-rows: auto auto auto auto auto;        
     }
     .hero{
         grid-column: span 2;
@@ -30,9 +30,48 @@
     .join{
         display: block;
         box-sizing: border-box;
-        border: 1px solid rgba(0,0,0,0.5);
+        position: relative;
+        border: 0.5rem solid #15295D;
         grid-row-start: 4;
         grid-column: span 2;
+    }
+    .join img{        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    .join img:hover{
+        opacity:1;
+    }
+    .join p{
+        position: absolute;
+        bottom: 0.3rem;        
+        text-align: center;
+    }
+    .hero h1{        
+        font-size: 1.8rem;
+    }
+    .joinHero{
+        font-size: larger;
+    }
+    .joinUs{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        left: 1rem;
+        padding: 1rem;
+        font-family: 'Hind', Arial, serif;
+        background-color: #15295D;
+        color: #F5D913;
+        border-radius: 10px;
+        border: 1px solid #fefefe;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .joinUs:hover{
+        background-color: #F5D913;
+        color: #15295D;        
     }
     /*footer*/
     footer{
