@@ -17,7 +17,7 @@
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
 	<header>        
-        <img class="logo" src="images/keiser-district-flag.jpg" alt="kaiser">
+        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
         <div id="title">
             <h1>Kaiserslautern</h1>
             <h2>Chamber of Commerce</h2>
@@ -42,7 +42,13 @@
     <main>
         <div class="gridView">
             <div class="hero">
-                <img id="hero" src="images/Kaiser-hero.jpg" alt="hero-img">
+                <figure id="hero">
+                    <img src="images/wdd230-org.jpg" alt="wdd230sample" sizes="50vw"
+                    srcset="images/wdd230-org-200.jpg 200w,
+                    images/wdd230-org-500.jpg 500w,
+                    images/wdd230-org-800.jpg 800w">
+                </figure>
+                <!--<img id="hero" src="images/Kaiser-hero.jpg" alt="hero-img">-->
                 <h1>Welcome to Kaiserslautern</h1>
                 <button class="joinHero">Join the Chamber</button>
             </div>
@@ -56,8 +62,14 @@
                 </p>
             </div>
             <div class="weather">
-                <h2>Weather (placeholder)</h2>
-                <img src="images/weatherPH.jpg" alt="weather">
+                <h2>Weather</h2>
+                <div id="forecast">
+                    <img src="images/Weather.jpg" alt="weather">
+                    <p><span id="temp">10</span>°C </p>
+                </div>
+                <h3>Partly Cloudy</h3>
+                <p>Wind Speed: <span id="windSpeed">5</span> km/h</p>
+                <p>Wind Chill: <span id="chill"></span></p>
             </div>
             <div class="join">
                 <img src="images/handshake.jpg" alt="handshake">
@@ -80,7 +92,7 @@
                     <a class="center" href="https://www.nachrichten-kl.de/2023/05/19/bekanntmachung-sitzung-des-ortsbeirates-erlenbach/">nachrichten-kl.de</a>
                 </div>
                 <div class="spot2">
-                    <h3>Digital Action Week of the Employment Agency for Equal Opportunities in the Labor Market</h3>
+                    <h3>Equal Employment Opportunities in the Labor Market</h3>
                     <img src="images/Bundesagentur-Arbeit-Logo.jpg" alt="employment">
                     <a class="center" href="https://www.nachrichten-kl.de/2023/05/19/digitale-aktionswoche-der-agentur-fuer-arbeit-zu-chancengleichheit-am-arbeitsmarkt/">nachrichten-kl.de</a>
                 </div>
@@ -116,5 +128,6 @@
     </footer>
  <!-- reference to scripts -->   
 <script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
