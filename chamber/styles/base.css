@@ -142,6 +142,7 @@ figure#hero{
     margin: 1%;
 }
 figure#hero img{
+    /*this code is for my original hero image*/
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -213,13 +214,7 @@ main p{
 .spot1, .spot2, .spot3{
     background-color: #fefefe;
 }
-.spot1 img{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-.spot2 img, .spot3 img{
+.spot1 img, .spot2 img, .spot3 img{
     display: block;
     width: 90%;
     margin: 0 auto;
