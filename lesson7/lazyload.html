@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Assignment for lesson 7 of WDD 230">
+    <title>Lesson 7</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <h1>Progressive Image Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-2.jpg" alt="image1">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-3.jpg" alt="image2">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-4.jpg" alt="image3">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-7.jpg" alt="image4">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-8.jpg" alt="image5">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Marina-9.jpg" alt="image6">
+        </picture>
+    </main>
+    <footer>
+        <p id="copy">&copy; <span id="currYear"></span> | Marina Kreibring | Belarus</p>
+        <p id="update">Last updated: <span id="updated"></span></p>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
