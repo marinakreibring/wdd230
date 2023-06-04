@@ -137,11 +137,7 @@ nav ul.open{
 .hero{
     position: relative;
 }
-figure#hero{
-    width: 98%;
-    margin: 1%;
-}
-figure#hero img{
+#hero{
     /*this code is for my original hero image*/
     width: 100%;
     height: 100%;
@@ -160,21 +156,26 @@ figure#hero img{
     right: 1rem;
     bottom: 1rem;
     padding: 1rem;
-    font-family: 'Hind', Arial, serif;
     background-color: #15295D;
-    color: #fefefe;
     border-radius: 10px;
-    border: 1px solid #fefefe;
+    border: 2px solid #fefefe;
+}
+.joinHero a{
+    font-family: 'Hind', Arial, serif;
+    color: #fefefe;
+    text-decoration: none;
 }
 .joinHero:hover{
     background-color: #fefefe;
+    border: 2px solid #15295D;
+}
+.joinHero:hover a{
     color: #15295D;
     font-weight: bold;
-    border: 2px solid #15295D;
 }
 main h2, h3{
     font-family: 'Lato', Times, sans-serif;
-    color: #15295D;
+    color: #15295d;
     text-align: center;
 }
 main p{
@@ -256,6 +257,25 @@ footer{
     display: block;
     text-align: center;
     border-top: 1px solid rgba(0,0,0,0.3);
+}
+/*css for discover page*/
+.discover img[data-src]{
+    filter: blur(0.1em);
+} 
+.discover img{
+    display: block;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 1rem auto;
+}
+.lastVisit{
+    text-align: center;
+    font-style: italic;
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 0.8rem);
+    color: #15295D;
 }
 
 

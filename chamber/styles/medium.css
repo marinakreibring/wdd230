@@ -62,17 +62,29 @@
         right: 1rem;
         left: 1rem;
         padding: 1rem;
-        font-family: 'Hind', Arial, serif;
         background-color: #15295D;
-        color: #F5D913;
         border-radius: 10px;
-        border: 1px solid #fefefe;
+        border: 2px solid #fefefe;
+        
+    }
+    .joinUs a{
+        font-family: 'Hind', Arial, serif;
+        color: #F5D913;
         font-weight: bold;
         font-size: 1.5rem;
+        text-decoration: none;
     }
     .joinUs:hover{
-        background-color: #F5D913;
-        color: #15295D;        
+        background-color: #F5D913;                
+    }
+    .joinUs:hover a{
+        color: #15295D;
+    }
+    .discover{
+        display: flex;
+    }
+    .discover img{
+        border: 2px solid #15295D;
     }
     /*footer*/
     footer{

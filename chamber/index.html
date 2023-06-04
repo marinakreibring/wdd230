@@ -30,10 +30,10 @@
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li ><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>  
+                <li ><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>  
             </ul>
         </nav>
         <p class="date">Today is <span id="currentDate"></span></p>
@@ -42,15 +42,9 @@
     <main>
         <div class="gridView">
             <div class="hero">
-                <figure id="hero">
-                    <img src="images/wdd230-org.jpg" alt="wdd230sample" sizes="50vw"
-                    srcset="images/wdd230-org-200.jpg 200w,
-                    images/wdd230-org-500.jpg 500w,
-                    images/wdd230-org-800.jpg 800w">
-                </figure>
-                <!--<img id="hero" src="images/Kaiser-hero.jpg" alt="hero-img">-->
+                <img id="hero" src="images/Kaiser-hero.jpg" alt="hero-img">
                 <h1>Welcome to Kaiserslautern</h1>
-                <button class="joinHero">Join the Chamber</button>
+                <button class="joinHero"><a href="join.html">Join the Chamber</a></button>
             </div>
             <div class="event">
                 <h2>Advisory Council Meeting</h2>
@@ -66,7 +60,7 @@
                 <h2>Weather</h2>
                 <div id="forecast">
                     <img src="images/Weather.jpg" alt="weather">
-                    <p><span id="temp">10</span>°C </p>
+                    <p><span id="temp">21</span>°C </p>
                 </div>
                 <h3>Partly Cloudy</h3>
                 <p>Wind Speed: <span id="windSpeed">5</span> km/h</p>
@@ -74,7 +68,7 @@
             </div>
             <div class="join">
                 <img src="images/handshake.jpg" alt="handshake">
-                <button class="joinUs">Join Us!</button>
+                <button class="joinUs"><a href="join.html">Join Us!</a></button>
                 <p>
                     Discover how to join the Camber of Commerce and how it will
                     benefit your organization!
@@ -108,7 +102,7 @@
     <!-- footer for the site plus my usual footer -->   
     <footer>
         <div id="address">
-            <img class="logo" src="images/keiser-district-flag.jpg" alt="kaiser">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
             <div>
                 <h3>Kaiserslautern Chamber of Commerce</h3>
                 <p>Europaallee 14,</p>
