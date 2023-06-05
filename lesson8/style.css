@@ -5,16 +5,18 @@ body{
     max-width: fit-content;
     margin: 0 auto;
 }
-h1, h2{
+h1{
     text-align: center;
     color: #15295D;
 }
 table{
     margin: 0 auto;
     border-collapse: collapse;
-    
     letter-spacing: 1px;
     font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1.5rem);
+}
+tfoot{
+    background-color: rgba(15, 37, 97, 0.8);
 }
 td{
     border: 1px solid #fefefe;
