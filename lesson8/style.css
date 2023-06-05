@@ -1,0 +1,51 @@
+body{
+    font-family: Merriweather, Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+h1, h2{
+    text-align: center;
+    color: #15295D;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+    letter-spacing: 1px;
+    font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1.5rem);
+}
+td{
+    border: 1px solid #fefefe;
+    text-align: center;
+}
+th{
+    background-color: #15295D;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+    padding: 1ch;
+}
+tr:nth-child(even) td{
+    background-color: rgba(15, 37, 97, 0.8);
+}
+tr:nth-child(odd) td{
+    background-color: rgba(15, 37, 97, 0.3)
+}
+caption{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    background-color: #15295D;
+    color: #fefefe;
+    padding: 0.5rem;
+    margin: 0.5rem auto;    
+}
+@media only screen and (max-width: 30rem){
+    .heading{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding: 5px;
+    }
+}
