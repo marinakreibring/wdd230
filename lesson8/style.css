@@ -32,6 +32,9 @@ tr:nth-child(even) td{
 tr:nth-child(odd) td{
     background-color: rgba(15, 37, 97, 0.3)
 }
+#top{
+    background-color: rgba(15, 37, 97, 0.8);
+}
 caption{
     padding: 10px;
 }
