@@ -19,13 +19,14 @@ tfoot{
     background-color: rgba(15, 37, 97, 0.8);
 }
 td{
-    border: 1px solid #fefefe;
+    border-left: 1px solid #fefefe;
     text-align: center;
 }
 th{
     background-color: #15295D;
     color: #fefefe;
-    border: 1px solid #fefefe;
+    border: 1px #fefefe;
+    border-style: solid solid none solid;
     padding: 1ch;
 }
 tr:nth-child(even) td{
@@ -49,7 +50,7 @@ footer{
 }
 @media only screen and (max-width: 30rem){
     .heading{
-        writing-mode: vertical-rl;
+        writing-mode: vertical-lr;
         transform: rotate(180deg);
         padding: 5px;
     }
