@@ -48,7 +48,7 @@ footer{
     padding: 0.5rem;
     margin: 0.5rem auto;    
 }
-@media only screen and (max-width: 31rem){
+@media only screen and (max-width: 25rem){
     .heading{
         writing-mode: vertical-lr;
         transform: rotate(180deg);
