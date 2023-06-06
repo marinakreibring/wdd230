@@ -50,8 +50,8 @@ footer{
 }
 @media only screen and (max-width: 25rem){
     .heading{
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        transform: scale(-1);
         padding: 5px;
     }
 }
