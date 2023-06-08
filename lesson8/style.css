@@ -38,9 +38,6 @@ tr:nth-child(odd) td{
 #top{
     background-color: rgba(15, 37, 97, 0.8);
 }
-caption{
-    padding: 10px;
-}
 footer{
     text-align: center;
     background-color: #15295D;
