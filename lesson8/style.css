@@ -47,7 +47,8 @@ footer{
 }
 @media only screen and (max-width: 25rem){
     .heading{
-        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
         transform: scale(-1);
         padding: 5px;
     }
