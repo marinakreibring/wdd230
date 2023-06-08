@@ -1,25 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Chamber of Commerce | Discover</title>
+    <meta name="description" content="Discover page for chamber site - WDD 230">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">     
 </head>
 <body>
-    <header>
-
-    </header>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+	<header>        
+        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        <div id="title">
+            <h1>Kaiserslautern</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div id="socialMedia">
+            <a href="https://m.facebook.com/IHKPfalzKL/?_rdr#_=_" target="_blank"><img src="images/fb-icon.png" alt="FB icon"></a>
+            <a href="https://twitter.com/IHK_Pfalz" target="_blank"><img src="images/twit-icon.png" alt="Twitter icon"></a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>
+        </nav>
+        <p class="date">Today is <span id="currentDate"></span></p>
+    </header>     
+    <!-- Thank you note --> 
     <main>
-        <h1>Thank you for contacting us!</h1>
-        <p>Your information has been sent to one of our lawers.
-            The assistant will contact you shortly to direct your further actions.
-        </p>
-
+        <div>
+            <h2>Thank you for your desire to join the Chamber of Commerce!</h2>
+            <p class="color">We will get back to you within a week with a response.</p>
+        </div>
     </main>
+    <!-- footer for the site plus my usual footer -->   
     <footer>
-
+        <div id="address">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+            <div>
+                <h3>Kaiserslautern Chamber of Commerce</h3>
+                <p>Europaallee 14,</p>
+                <p>67657 Kaiserslautern, Germany</p>
+            </div>
+        </div>
+        <div id="contactInfo">
+            <p><span>&#9993;</span> info@dihk.de</p>
+            <p><span>&#9990;</span> +49 631 414480</p>
+            <p><span>&#128681; </span><a class="location" href="https://www.google.com/maps/place/IHK+Pfalz,+Dienstleistungszentrum+Kaiserslautern/@49.45581,7.80576,17z/data=!4m15!1m8!3m7!1s0x4796131b824a0539:0x8c09c9c3fd9a3909!2zRXVyb3BhYWxsZWUgMTQsIDY3NjU3IEthaXNlcnNsYXV0ZXJuLCDQk9C10YDQvNCw0L3QuNGP!3b1!8m2!3d49.45581!4d7.80576!16s%2Fg%2F11csk86841!3m5!1s0x4796131b824a0539:0x3767f4dc5d7e9075!8m2!3d49.4557996!4d7.8058029!16s%2Fg%2F1tmcl50n"> Location Map</a></p>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="currYear"></span> Kaiserslautern Chamber</p>
+            <h4>Marina Kreibring</h4>
+            <p>WDD 230 Project</p>
+            <p>Last updated: <span id="updated"></span></p>            
+        </div>        
     </footer>
-    
+ <!-- reference to scripts -->   
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
