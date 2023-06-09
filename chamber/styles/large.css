@@ -116,7 +116,27 @@
         width: 800px;
         height: 700px;
     }
-}
-#joinContent{
-    display: flex;
+    /*css for join page*/
+    #joinPage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    form fieldset, table{
+        margin: 1rem auto 2rem;
+        width: 80%;
+    }
+    form label input, form label textarea, form label select{      
+        padding: 5px;
+    }
+    form input.submitBtn{        
+        margin: .5rem 20% 1.5rem;
+        width: 60%;     
+    }
+    th{
+        padding: 1rem;
+    }
+    tfoot th{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }

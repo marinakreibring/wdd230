@@ -40,96 +40,131 @@
     </header>     
     <!-- Sections should change in different layouts --> 
     <main>
-        <div>
-            <h2>Join the Camber of Commerce and get benefits for your organization!</h2>
-        </div>
-        <div id="form">
-            <h3>Fill in this form to join us</h3>
-            <form method="get" action="thankyou.html">                
-                <fieldset>
-                    <label>First Name*<input type="text" name="fname" required></label>
-                    <label>Last Name*<input type="text" name="lname" required></label>
-                    <label>Position<input type="text" name="title" pattern="[A-Za-z- ]{7}"></label>
-                    <label>Email*<input type="email" name="email" placeholder="someone@example.xyz" required></label>
-                    <label>Phone*<input type="tel" name="phone" required></label>
-                    <label>Business Name/Title*<input type="text" name="business" required></label>
-                    <label>Membership Level
-                        <select name="level">
-                            <option value="">Please Select &#9662;</option>
-                            <option value="n/a">Non Profit</option>
-                            <option value="bronze">Bronze</option>
-                            <option value="silver">Silver</option>
-                            <option value="gold">Gold</option>
-                        </select>                
-                    </label>
-                    <label>Business Description <textarea input type="text" name="description"></textarea></label>
-                    <input type="hidden" name="timestamp" value="">
-                    <input type="submit" value="Join the Chamber" class="submitBtn">
-                </fieldset>                
-            </form>
-        </div>
-        <div id="table">
-            <h3>Benefits for you</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th id="top" colspan="5">Membership Levels</th>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <th class="heading">N/P</th>
-                        <th class="heading">Bronze</th>
-                        <th class="heading" >Silver</th>
-                        <th class="heading">Gold</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Training Hall</th>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <th>Group Practice</th>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <th>Personal Coach</th>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <th>Swimming Pool</th>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <th>Shower</th>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Membership Fee</th>
-                        <td>free</td> 
-                        <td>50€</td>
-                        <td>100€</td>
-                        <td>150€</td>
-                    </tr>
-                </tfoot>            
-            </table>
+        <h2>Join the Camber of Commerce and get benefits for your organization!</h2>
+        <div id="joinPage">        
+            <div id="form">
+                <h3>Fill in this form to join us</h3>
+                <form method="get" action="thankyou.html">                
+                    <fieldset>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Position<input type="text" name="title" pattern="[A-Za-z\-\ \.]{7,}"></label>
+                        <label>Email*<input type="email" name="email" placeholder="someone@example.xyz" required></label>
+                        <label>Phone*<input type="tel" name="phone" required></label>
+                        <label>Business Name/Title*<input type="text" name="business" required></label>
+                        <label>Membership Level
+                            <select name="level">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="n/a">Non Profit</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                            </select>                
+                        </label>
+                        <label>Business Description <textarea name="description"></textarea></label>
+                        <input type="hidden" name="timestamp" value="">
+                        <input type="submit" value="Join the Chamber" class="submitBtn">
+                    </fieldset>                
+                </form>
+            </div>
+            <div id="table">
+                <h3>Membership Benefits</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="top" colspan="5">Membership Levels</th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <th class="heading">N/P</th>
+                            <th class="heading">Bronze</th>
+                            <th class="heading" >Silver</th>
+                            <th class="heading">Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Network</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Meetings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Meetings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Trainings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Events</th>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Events</th>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Discounts</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Discounts</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Advertising</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>         
+                        <tr>
+                            <th>Advertising</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr> 
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Membership Fee</th>
+                            <td>free</td> 
+                            <td>50€</td>
+                            <td>100€</td>
+                            <td>150€</td>
+                        </tr>
+                    </tfoot>            
+                </table>
+            </div>    
         </div>
     </main>
     <!-- footer for the site plus my usual footer -->   

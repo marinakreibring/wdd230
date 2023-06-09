@@ -124,4 +124,26 @@
         border-left: 2px solid #fefefe;
         border-right: 2px solid #fefefe;
     }
+    /*css for the join page*/
+    form fieldset{
+        margin: 1rem 10% 2rem;        
+    }
+    form label{
+        display: flex;
+        margin: 1rem;
+        text-align: left;
+        padding-top: 0.5rem;
+    }
+    form label input, form label textarea, form label select{      
+        margin: .5rem;
+        float: left;
+    }
+    form input.submitBtn{        
+        margin: 1rem 10% 2rem;
+        width: 80%;     
+    }
+    table{
+        margin: 1rem 10% 2rem;
+        width: 80%;
+    }
 }
