@@ -124,6 +124,7 @@
     form fieldset, table{
         margin: 1rem auto 2rem;
         width: 80%;
+        
     }
     form label input, form label textarea, form label select{      
         padding: 5px;
