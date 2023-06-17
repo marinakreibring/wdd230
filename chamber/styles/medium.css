@@ -146,4 +146,13 @@
         margin: 1rem 10% 2rem;
         width: 80%;
     }
+    /*css for directory page list view*/    
+    .list section{
+        grid-template-columns: 30% auto auto;
+        
+    }
+    .list section p:nth-child(5){
+        display: block;
+    }
+    
 }

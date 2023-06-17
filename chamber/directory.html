@@ -38,11 +38,18 @@
         </nav>
         <p class="date">Today is <span id="currentDate"></span></p>
     </header>     
-    <!-- Sections should change in different layouts --> 
+    <!-- View should change in grid or list --> 
     <main>
         <div>
-            <p>This is a Directory page for the Chamber.</p>
+            <h2>Members of the Kaiserslautern Chamber of Commerce</h2>
         </div>
+        <div class="dirMenu">
+            <button id="grid"> &#9744; Grid</button>
+            <button id="list"> &#9776; List</button>
+        </div>        
+        <article>
+            <div class="cards"></div>
+        </article>               
     </main>
     <!-- footer for the site plus my usual footer -->   
     <footer>
@@ -66,7 +73,8 @@
             <p>Last updated: <span id="updated"></span></p>            
         </div>        
     </footer>
- <!-- reference to scripts -->   
-<script src="scripts/scripts.js"></script>
+ <!-- reference to scripts -->  
+<script src="scripts/directory.js"></script> 
+<script src="scripts/script.js"></script>
 </body>
 </html>

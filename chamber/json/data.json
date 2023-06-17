@@ -1,0 +1,100 @@
+{
+    "business": [
+        {
+            "name": "Abita Energie Otterberg GmbH",
+            "address": ["14 Bismarckstraße", "67655 Kaiserslautern"],
+            "phone": "+49 631 80011400",
+            "web": "https://www.abita-energie.de",
+            "logo": "images/business/abita-logo.png",
+            "level": "silver"                       
+        },
+        {
+            "name": "Con Rad der Fahrradladen",
+            "address": ["4 Glockenstraße", "67655 Kaiserslautern"],
+            "phone": "+49 631891489",
+            "web": "https://www.conrad-fahrradladen.de",
+            "logo": "images/business/conrad-logo.png",
+            "level": "silver"         
+        },
+        {
+            "name": "Empolis GmbH",
+            "address": ["10 Europaallee", "67657 Kaiserslautern"],
+            "phone": "+49 631680370",
+            "web": "https://www.empolis.com",
+            "logo": "images/business/empolis-logo.png",
+            "level": "gold"           
+        },
+        {
+            "name": "FK Kraemer GmbH",
+            "address": ["15a Merkurstraße", "67663 Kaiserslautern"],
+            "phone": "+49 63154154",
+            "web": "https://www.fk-kraemer.de",
+            "logo": "images/business/kramer-logo.png",
+            "level": "gold"           
+        },
+        {
+            "name": "Fraunhofer ITWM",
+            "address": ["1 Fraunhofer-Platz", "67663 Kaiserslautern"],
+            "phone": "+49 631316000",
+            "web": "https://itwm.fraunhofer.de",
+            "logo": "images/business/fraunhofer-logo.png",
+            "level": "silver"           
+        },
+        {
+            "name": "Human Solutions GmbH",
+            "address": ["10 Europaallee", "67657 Kaiserslautern"],
+            "phone": "+49 631343593",
+            "web": "https://www.human-solutions.com",
+            "logo": "images/business/HumSol-logo.png",
+            "level": "gold"         
+        },
+        {
+            "name": "Loom Ltd",
+            "address": ["9 Von-Miller-Straße", "67661 Kaiserslautern"],
+            "phone": "+49 63135310",
+            "web": "https://www.fruitoftheloom.eu",
+            "logo": "images/business/loom-logo.png",
+            "level": "bronze"        
+        },
+        {
+            "name": "Netbiscuits GmbH",
+            "address": ["10 Europaallee", "67657 Kaiserslautern"],
+            "phone": "+49 6313031231",
+            "web": "https://www.netbiscuits.com",
+            "logo": "images/business/netbiscuits-logo.png",
+            "level": "silver"         
+        },
+        {
+            "name": "Pfeffer & Zahn GmbH",
+            "address": ["28 Denisstraße", "67663 Kaiserslautern"],
+            "phone": "+49 631 90101",
+            "web": "http://www.pfefferundzahn.de",
+            "logo": "images/business/pfeffer-logo.png",
+            "level": "bronze"            
+        },   
+        {
+            "name": "Sanitas GmbH",
+            "address": ["16 Schandeinstraße", "67657 Kaiserslautern"],
+            "phone": "+49 631311-84040",
+            "web": "https://www.sanitas-kl.de",
+            "logo": "images/business/sanitas-logo.png",
+            "level": "bronze"            
+        },             
+        {
+            "name": "Stadtwerke Kaiserslautern",
+            "address": ["14 Bismarckstraße", "67655 Kaiserslautern"],
+            "phone": "+49 631 8001-1200",
+            "web": "https://www.swk-kl.de/",
+            "logo": "images/business/swk-logo.png",
+            "level": "bronze"        
+        },
+        {
+            "name": "WIPOTEC GmbH",
+            "address": ["26 Adam-Hoffmann-Straße", "67657 Kaiserslautern"],
+            "phone": "+49 631341460",
+            "web": "https://www.wipotec.com",
+            "logo": "images/business/wipotec-logo.png",
+            "level": "gold"             
+        }
+    ]
+}
