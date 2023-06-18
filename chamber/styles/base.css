@@ -447,7 +447,7 @@ section{
     display: none;
 }
 .list section:nth-child(even){
-    background-color: lightskyblue;
+    box-shadow: inset 0 -2em 2em lightskyblue;
 }
 
 
