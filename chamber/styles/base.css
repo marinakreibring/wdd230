@@ -298,9 +298,13 @@ table{
     font-family: 'Hind', Arial, serif;
     border: 2px solid #15295D;
 }
+.heading{
+    border-bottom: 1px solid #fefefe;
+}
 tfoot{
     background-color: #15295D;
     color: #fefefe;
+    border-top: 1px solid #fefefe;
 }
 td{
     border-left: 1px solid #fefefe;
@@ -318,9 +322,10 @@ tr:nth-child(even) td{
 }
 tr:nth-child(odd) td{
     background-color: rgba(15, 37, 97, 0.3);
+
 }
 #top{
-    background-color: rgba(15, 37, 97, 0.8);
+    background-color:rgba(15, 37, 97, 0.8);
 }
 
 /*css for the form*/

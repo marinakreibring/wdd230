@@ -111,8 +111,7 @@
         transition: width 0.2s ease-out 0.5s, height 0.2s ease-out 0.5s, border-radius 0.2s ease-out 0.5s;        
     }
     .discover img:hover{
-        box-shadow: 5px 5px 10px 10px #F5D913;
-        border-radius: 20% 0;
+        border-radius: 10% 0;
         width: 800px;
         height: 700px;
     }
