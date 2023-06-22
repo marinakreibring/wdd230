@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+    line-height: 1;
+    width: fit-content;
+    margin: 0 auto;
+}
+header, footer{
+    font-size: clamp(0.8rem, 0.5rem + 1.5vw, 1.5rem);
+    background-color: steelblue;
+    color: sandybrown;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+h3{
+    padding: 2rem;
+    font-size: clamp(0.8rem, 0.5rem + 1.5vw, 1.5rem);
+    color: royalblue;
+}
