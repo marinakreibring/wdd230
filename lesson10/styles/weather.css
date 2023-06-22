@@ -47,7 +47,7 @@ img{
     object-fit: contain;
     border-radius: 50%;
     box-shadow: 0 0 10px 10px lightpink;
-    background-color: white;
+    background-color: lightblue;
 }
 footer{
     font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1rem);
