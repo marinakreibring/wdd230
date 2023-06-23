@@ -197,7 +197,6 @@ p.color{
 #forecast{
     display: flex;
     flex-direction: row;
-    
 }
 #forecast p{
     font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3rem);
