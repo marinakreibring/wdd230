@@ -111,9 +111,9 @@
         transition: width 0.2s ease-out 0.5s, height 0.2s ease-out 0.5s, border-radius 0.2s ease-out 0.5s;        
     }
     .discover img:hover{
-        border-radius: 10% 0;
-        width: 800px;
-        height: 700px;
+        border-radius: 50px 0;
+        width: 70vw;
+        height: 80vh;
     }
     /*css for join page*/
     #joinPage{

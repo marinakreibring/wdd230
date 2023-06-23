@@ -122,6 +122,7 @@ nav ul.open{
 .hero, .event, .weather, .news, .spotlight{
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,0.5);
+    padding: .5rem;
 }
 .spotlight{
     display: grid;
@@ -136,6 +137,7 @@ nav ul.open{
 }
 .hero{
     position: relative;
+    padding: 0;
 }
 #hero{
     /*this code is for my original hero image*/
@@ -180,32 +182,43 @@ main h2, h3{
 }
 main p{
     font-family: 'Hind', Arial, serif;
-    padding: 1rem;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
 }
 p.color{
     font-family: 'Hind', Arial, serif;
     padding: 2rem;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
-    background-color: #15295d;
-    color: #fefefe;
+    background-color: lightskyblue;
     text-align: center;
 }
-#forecast {
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
+.weather{
+    background-color:  lightskyblue;
 }
-#forecast img{
-    width: 50%;
+#forecast{
+    display: flex;
+    flex-direction: row;
     
 }
 #forecast p{
-    font-size: clamp(1.8rem, 0.75rem + 1.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3rem);
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+}
+#forecast img{
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 1rem;
 }
 .weather p{
     text-align: center;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
+}
+#condition{
+    text-transform: capitalize;
+}
+#credits{
+    font-size: .8rem;
 }
 .event img{
     display: flex;
@@ -278,6 +291,10 @@ footer{
     height: 400px;
     object-fit: cover;
     margin: 1rem auto;
+    border: 1px solid #15295D;
+}
+.discover p{
+    margin: 1rem;
 }
 .lastVisit{
     text-align: center;
@@ -307,7 +324,7 @@ tfoot{
     border-top: 1px solid #fefefe;
 }
 td{
-    border-left: 1px solid #fefefe;
+    border-left: 1px solid lightskyblue;
     text-align: center;
 }
 th{
@@ -318,14 +335,11 @@ th{
     padding: 1ch;
 }
 tr:nth-child(even) td{
-    background-color: rgba(15, 37, 97, 0.8);
-}
-tr:nth-child(odd) td{
-    background-color: rgba(15, 37, 97, 0.3);
-
+    background-color:  lightskyblue;
+    border-left: 1px solid #fefefe;
 }
 #top{
-    background-color:rgba(15, 37, 97, 0.8);
+    background-color: #c51a21;    
 }
 
 /*css for the form*/

@@ -84,7 +84,7 @@
         display: flex;
     }
     .discover img{
-        border: 2px solid #15295D;
+        border: 4px ridge rgba(21, 41, 93, .9);
     }
     /*footer*/
     footer{

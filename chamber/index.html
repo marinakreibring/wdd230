@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Chamber of Commerce | Home</title>
     <meta name="description" content="Main page for chamber site - WDD 230">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -59,12 +60,14 @@
             <div class="weather">
                 <h2>Weather</h2>
                 <div id="forecast">
-                    <img src="images/Weather.jpg" alt="weather">
-                    <p><span id="temp">21</span>°C </p>
-                </div>
-                <h3>Partly Cloudy</h3>
-                <p>Wind Speed: <span id="windSpeed">5</span> km/h</p>
-                <p>Wind Chill: <span id="chill"></span></p>
+                    <img src="" alt="" id="weather-icon">
+                    <p><span id="current-temp"></span> &deg;C </p>
+                </div>   
+                <p><span id="condition"></span></p>              
+                <p>Wind Speed: <span id="wind-speed">3</span> km/h</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <hr>
+                <p id="credits">Information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
             </div>
             <div class="join">
                 <img src="images/handshake.jpg" alt="handshake">
@@ -124,5 +127,6 @@
  <!-- reference to scripts -->   
 <script src="scripts/script.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
 </body>
 </html>
