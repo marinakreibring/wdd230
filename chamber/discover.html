@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Chamber of Commerce | Discover</title>
-    <meta name="description" content="Discover page for chamber site - WDD 230">
+    <title>Kaiserslautern Chamber of Commerce | Discover</title>
+    <meta name="description" content="Discover page for Kaiserslautern Chamber of Commerce website">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -17,7 +17,9 @@
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
 	<header>        
-        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        </a> 
         <div id="title">
             <h1>Kaiserslautern</h1>
             <h2>Chamber of Commerce</h2>
@@ -74,21 +76,21 @@
         </div>
         <div class="discover"> 
             <picture>
-                <img src="images/placeholder.jpg" data-src="images/kaiserslautern.jpg" alt="Old Rathaus">
-            </picture>
-            <p>
-                Today, Kaiserslautern is a modern center of information and communication technology,
-                it has a well-known university, a technical college and many research institutes located throughout the city.
-            </p>
-        </div>
-        <div class="discover"> 
-            <picture>
                 <img src="images/placeholder.jpg" data-src="images/Stiftskirche-Kaiserslautern.webp" alt="Stiftskirche in Kaiserslautern">
             </picture>
             <p>
                 The collegiate church of St. Martin and St. Mary - Stiftkirche - is the oldest church in Kaiserslautern.
                 It was built in 1250-1350. It is the oldest church between the Rhine and the Saarland and one of 
                 the most important Gothic church buildings in the Palatinate.
+            </p>
+        </div>
+        <div class="discover"> 
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/it_campus.jpg" alt="IT campus">
+            </picture>
+            <p>
+                Today, Kaiserslautern is a modern center of information and communication technology,
+                it has a well-known university, a technical college and many research institutes located throughout the city.
             </p>
         </div>
         <div class="discover"> 
@@ -122,7 +124,7 @@
         </div>
         <div id="copyright">
             <p>&copy; <span id="currYear"></span> Kaiserslautern Chamber</p>
-            <h4>Marina Kreibring</h4>
+            <p><strong>Marina Kreibring</strong></p>
             <p>WDD 230 Project</p>
             <p>Last updated: <span id="updated"></span></p>            
         </div>        

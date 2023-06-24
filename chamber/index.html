@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Chamber of Commerce | Home</title>
-    <meta name="description" content="Main page for chamber site - WDD 230">
+    <title>Kaiserslautern Chamber of Commerce | Home</title>
+    <meta name="description" content="Main page for Kaiserslautern Chamber of Commerce website site">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
@@ -17,8 +17,10 @@
     <div id="banner">
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
-	<header>        
-        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+	<header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        </a>       
         <div id="title">
             <h1>Kaiserslautern</h1>
             <h2>Chamber of Commerce</h2>
@@ -45,13 +47,13 @@
             <div class="hero">
                 <img id="hero" src="images/Kaiser-hero.jpg" alt="hero-img">
                 <h1>Welcome to Kaiserslautern</h1>
-                <button class="joinHero"><a href="join.html">Join the Chamber</a></button>
+                <div class="joinHero"><a href="join.html">Join the Chamber</a></div>
             </div>
             <div class="event">
                 <h2>Advisory Council Meeting</h2>
                 <img src="images/Erlenbach.jpg" alt="event">
                 <p>
-                    On Tuesday, 30 May 2023, at 19:00, a meeting of the Erlenbach local 
+                    Meeting of the Erlenbach local 
                     advisory council will take place in the Erlenbach local government 
                     meeting room at Im Wiesental 1, Kaiserslautern. 
                     <a href="https://www.nachrichten-kl.de/event/bekanntmachung-sitzung-des-ortsbeirates-erlenbach/">more info...</a>
@@ -71,7 +73,7 @@
             </div>
             <div class="join">
                 <img src="images/handshake.jpg" alt="handshake">
-                <button class="joinUs"><a href="join.html">Join Us!</a></button>
+                <div class="joinUs"><a href="join.html">Join Us!</a></div>
                 <p>
                     Discover how to join the Camber of Commerce and how it will
                     benefit your organization!
@@ -85,19 +87,19 @@
             </div>
             <div class="spotlight">
                 <div class="spot1">
-                    <h3>Retail and mail order in Rhineland-Palatinate and Saarland</h3>
-                    <img src="images/Streik-Logo.jpg" alt="negotiation-logo">
-                    <a class="center" href="https://www.nachrichten-kl.de/2023/05/27/tarifrunde-einzel-und-versandhandel-rheinland-pfalz-und-saarland/">nachrichten-kl.de</a>
+                    <h3>Human Solutions GmbH</h3>
+                    <img src="images/business/HumSol-logo.png" alt="humSol-logo">
+                    <a class="center" href="https://www.human-solutions.com">www.human-solutions.com</a>
                 </div>
                 <div class="spot2">
-                    <h3>Equal Employment Opportunities in the Labor Market</h3>
-                    <img src="images/Bundesagentur-Arbeit-Logo.jpg" alt="employment">
-                    <a class="center" href="https://www.nachrichten-kl.de/2023/05/19/digitale-aktionswoche-der-agentur-fuer-arbeit-zu-chancengleichheit-am-arbeitsmarkt/">nachrichten-kl.de</a>
+                    <h3>Empolis GmbH</h3>
+                    <img src="images/business/empolis-logo.png" alt="Empolis">
+                    <a class="center" href="https://www.empolis.com">www.empolis.com</a>
                 </div> 
                 <div class="spot3">
-                    <h3>Healthcare activities in Kaiserslautern</h3>
-                    <img src="images/clinic.jpg" alt="clinic">
-                    <a class="center" href="https://www.facebook.com/Gesundheit.in.KL">facebook.com</a>
+                    <h3>WIPOTEC GmbH</h3>
+                    <img src="images/business/wipotec-logo.png" alt="WIPOTEC">
+                    <a class="center" href="https://www.wipotec.com">www.wipotec.com</a>
                 </div>
             </div>
         </div>
@@ -119,7 +121,7 @@
         </div>
         <div id="copyright">
             <p>&copy; <span id="currYear"></span> Kaiserslautern Chamber</p>
-            <h4>Marina Kreibring</h4>
+            <p><strong>Marina Kreibring</strong></p>
             <p>WDD 230 Project</p>
             <p>Last updated: <span id="updated"></span></p>            
         </div>        

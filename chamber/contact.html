@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Chamber of Commerce | Discover</title>
-    <meta name="description" content="Discover page for chamber site - WDD 230">
+    <title>Chamber of Commerce | Contact Us</title>
+    <meta name="description" content="Contact page for Kaiserslautern Chamber of Commerce website">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -17,7 +17,9 @@
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
 	<header>        
-        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        </a> 
         <div id="title">
             <h1>Kaiserslautern</h1>
             <h2>Chamber of Commerce</h2>
@@ -38,10 +40,80 @@
         </nav>
         <p class="date">Today is <span id="currentDate"></span></p>
     </header>     
-    <!-- Sections should change in different layouts --> 
+    <!-- Add info to your choice --> 
     <main>
-        <div>
-            <p>This is a Contact page for the Chamber site.</p>
+        <div id="contact-grid">
+            <div id="cont-background">
+                <img src="images/Kaiser-hero.jpg" alt="kaiser">
+            </div>        
+            <div class="team">
+               <h2>Your team in Kaiserslautern</h2>
+               <section class="teamMember">
+                    <img src="images/team/schaum-michael.png" alt="Michael Schaum">
+                    <h4>Michael Schaum</h4>
+                    <h5>Managing Director, Head of Service Center</h5>
+                    <p>Tel. 0631 41448-2700</p>
+                    <p>E-Mail: michael.schaum@pfalz.ihk24.de</p>
+                </section>            
+                <section class="teamMember">
+                    <img src="images/team/buhl-christian.png" alt="Christian Buhl">
+                    <h4>Christian Buhl</h4>
+                    <h5>Commercial and industrial-technical training</h5>
+                    <p>Tel. 0631 41448-2712</p>
+                    <p>E-Mail: christian.buhl@pfalz.ihk24.de</p>
+                </section>
+                <section class="teamMember">
+                    <img src="images/team/golling-roswitha.png" alt="Roswita Golling">
+                    <h4>Roswita Golling</h4>
+                    <h5>Team leader of the training consultants - advice and support for trainers and trainees.
+                        Responsible for industrial and commercial training</h5>
+                    <p>Tel. 0631 41448-1717</p>
+                    <p>E-Mail: roswita.golling@pfalz.ihk24.de</p>
+                </section>
+                <section class="teamMember">
+                    <img src="images/team/hess-bernd.png" alt="Bernd Heß">
+                    <h4>Bernd Heß</h4>
+                    <h5>Training consultant</h5>
+                    <p>Tel. 0631 41448-2705</p>
+                    <p>E-Mail: bernd.hess@pfalz.ihk24.de</p>
+                </section>
+                <section class="teamMember">
+                    <img src="images/team/heinz-margit.png" alt="Margit Heinz">
+                    <h4>Margit Heinz</h4>
+                    <h5>Certification of foreign economic documents</h5>
+                    <p>Tel. 0631 41448-2707</p>
+                    <p>E-Mail: margit.heinz@pfalz.ihk24.de</p>
+                </section>            
+                <section class="teamMember">
+                    <img src="images/team/wehrmann-grit.png" alt="Grit Wehrmann">
+                    <h4>Grit Wehrmann</h4>
+                    <h5>Certification of foreign trade documents, commercial interim and final examinations</h5>
+                    <p>Tel. 0631 41448-2706</p>
+                    <p>E-Mail: grit.wehrmann@pfalz.ihk24.de</p>
+                </section>            
+            </div>
+            <div class="working">
+                <h2>We work for you</h2>
+                <p>at Europaallee 14,</p>
+                <p>Monday - Thursday:   8:00 - 16:30</p>
+                <p>Friday:   8:00 - 15:00</p>
+                <h2>Contact us</h2>
+                <p>E-mail: info@dihk.de</p>
+                <p>Phone: +49 631 414480</p>
+            </div>
+            <div id="contactForm">
+                <h2>Want to know more?</h2>
+                <form method="get" action="thankyou.html">                
+                    <fieldset>
+                        <label>Name*<input type="text" name="name" required></label>
+                        <label>Email*<input type="email" name="email" placeholder="someone@example.xyz" required></label>
+                        <label>Phone<input type="tel" name="phone"></label>
+                        <label>Question/Concern <textarea name="description"></textarea></label>
+                        <input type="hidden" name="timestamp" value="">
+                        <input type="submit" value="Send Your Message" class="submitBtn">
+                    </fieldset>             
+                </form>
+            </div>
         </div>
     </main>
     <!-- footer for the site plus my usual footer -->   
@@ -61,7 +133,7 @@
         </div>
         <div id="copyright">
             <p>&copy; <span id="currYear"></span> Kaiserslautern Chamber</p>
-            <h4>Marina Kreibring</h4>
+            <p><strong>Marina Kreibring</strong></p>
             <p>WDD 230 Project</p>
             <p>Last updated: <span id="updated"></span></p>            
         </div>        

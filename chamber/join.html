@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Chamber of Commerce | Discover</title>
-    <meta name="description" content="Discover page for chamber site - WDD 230">
+    <title>Kaiserslautern Chamber of Commerce | Join</title>
+    <meta name="description" content="Join page for Kaiserslautern Chamber of Commerce website">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -17,7 +17,9 @@
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
 	<header>        
-        <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/keiser-district-flag.webp" alt="kaiser">
+        </a> 
         <div id="title">
             <h1>Kaiserslautern</h1>
             <h2>Chamber of Commerce</h2>
@@ -38,7 +40,7 @@
         </nav>
         <p class="date">Today is <span id="currentDate"></span></p>
     </header>     
-    <!-- Sections should change in different layouts --> 
+    <!-- Form and table position should change in different layouts --> 
     <main>
         <h2>Join the Chamber of Commerce and get benefits for your organization!</h2>
         <div id="joinPage">        
@@ -72,10 +74,10 @@
                 <table>
                     <thead>
                         <tr>
-                            <th id="top" colspan="5">Membership Levels</th>
+                            <th id="toph" colspan="5">Membership Levels</th>
                         </tr>
                         <tr>
-                            <td id="top">&nbsp;</td>
+                            <td id="topd">&nbsp;</td>
                             <th class="heading">N/P</th>
                             <th class="heading">Bronze</th>
                             <th class="heading" >Silver</th>
@@ -98,7 +100,7 @@
                             <td>✔️</td>
                         </tr>
                         <tr>
-                            <th>Online Trainings</th>
+                            <th>Trainings</th>
                             <td>✔️</td>
                             <td>✔️</td>
                             <td>✔️</td>
@@ -184,7 +186,7 @@
         </div>
         <div id="copyright">
             <p>&copy; <span id="currYear"></span> Kaiserslautern Chamber</p>
-            <h4>Marina Kreibring</h4>
+            <p><strong>Marina Kreibring</strong></p>
             <p>WDD 230 Project</p>
             <p>Last updated: <span id="updated"></span></p>            
         </div>        

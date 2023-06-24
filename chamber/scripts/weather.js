@@ -1,4 +1,4 @@
-const url = `http://api.openweathermap.org/data/2.5/weather?q=Kaiserslautern&units=metric&appid=372a5392e2a2f9307ec69430843db5b9`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Kaiserslautern&units=metric&appid=372a5392e2a2f9307ec69430843db5b9`;
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");

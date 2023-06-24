@@ -83,7 +83,10 @@
         border: 1px solid rgba(0,0,0,0.5)
     }
     .spot3{
-        display: block;
+        background-color: #fefefe;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;        
     }
     #address img{
         max-inline-size: 100px;
@@ -147,4 +150,9 @@
     .list section p:nth-child(3){
         display: block;
     }
+    /*css for contact page*/
+    #contactForm fieldset{
+        width: 50vw;
+        margin: 0 0 1rem;
+    } 
 }
