@@ -478,9 +478,6 @@ section{
     display: grid;
     grid-template-columns: 1fr;
 }
-#cont-background{
-    display: none;
-}
 .working{
     text-align: center;
 }

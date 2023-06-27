@@ -158,7 +158,7 @@
     #contact-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         position: relative;
     }
     .team{
@@ -174,14 +174,21 @@
         right: 0;
         bottom: 0;       
     }
-    #cont-background{
-       
-       
-        height: 100vh;
-        object-fit: cover;
-        background-position: center;
+    #contact-background{
+        background-image: url("/chamber/images/Kaiser-hero.jpg");       
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-size: cover;
+        background-origin: border-box;
     }
+    #contact-grid h2{
+        color: #fefefe;
+        text-shadow: 1px 1px 5px black, 0 0 1em #15295D, 0 0 0.3em #15295D;
+    }
+    .working p{
+        color: #fefefe;
+        text-shadow: 1px 1px 5px black, 0 0 1em #15295D, 0 0 0.3em #15295D;
+    }
+    
     
 }

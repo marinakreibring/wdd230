@@ -144,8 +144,7 @@
     }
     /*css for directory page list view*/    
     .list section{
-        grid-template-columns: 20% 1fr 1fr 1fr;
-        
+        grid-template-columns: 20% 1fr 1fr 1fr;        
     }
     .list section p:nth-child(3){
         display: block;
