@@ -175,7 +175,7 @@
         bottom: 0;       
     }
     #contact-background{
-        background-image: url("/chamber/images/Kaiser-hero.jpg");       
+        background-image: url("../images/Kaiser-hero.jpg");       
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
