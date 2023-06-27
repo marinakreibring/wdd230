@@ -10,7 +10,7 @@ body{
     display: none;
     background-color: #F5D913;
     color: #000000;
-    padding: 1ch;
+    padding: .1rem;
     text-align: center;
     font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1.5rem);
 }
