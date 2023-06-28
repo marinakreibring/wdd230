@@ -184,6 +184,7 @@ main h2, h3, h4, h5{
 main p{
     font-family: 'Hind', Arial, serif;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
+    padding: 1ch;
 }
 p.color{
     font-family: 'Hind', Arial, serif;

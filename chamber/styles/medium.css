@@ -181,14 +181,10 @@
         background-size: cover;
         background-origin: border-box;
     }
-    #contact-grid h2{
-        
+    #contact-grid h2{        
         text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
     }
-    .working p{
-        
+    .working p{        
         text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
-    }
-    
-    
+    }    
 }
