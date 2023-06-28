@@ -175,19 +175,19 @@
         bottom: 0;       
     }
     #contact-background{
-        background-image: url("../images/Kaiser-hero.jpg");       
+        background-image: url("../images/kaiserslautern_slider.jpg");       
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-origin: border-box;
     }
     #contact-grid h2{
-        color: #fefefe;
-        text-shadow: 1px 1px 5px black, 0 0 1em #15295D, 0 0 0.3em #15295D;
+        
+        text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
     }
     .working p{
-        color: #fefefe;
-        text-shadow: 1px 1px 5px black, 0 0 1em #15295D, 0 0 0.3em #15295D;
+        
+        text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
     }
     
     
