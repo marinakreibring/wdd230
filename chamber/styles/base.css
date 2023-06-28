@@ -194,7 +194,8 @@ p.color{
     text-align: center;
 }
 .weather{
-    background-color:  lightskyblue;
+    background-color:  rgb(179, 220, 247);
+    
 }
 #forecast{
     display: flex;
