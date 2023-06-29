@@ -1,10 +1,11 @@
 @media only screen and (min-width: 64rem){
     header{
-        grid-template-columns: 10% 25% auto 10%;
+        grid-template-columns: 150px auto auto 150px;
         grid-template-rows: 150px auto;
     }
-    header img{
-        max-height: 80%;
+    .logo{
+        margin: 1rem;
+        max-inline-size: 100px;
     }
     #title h1{    
         font-size: clamp(2rem, 0.75rem + 1.5vw, 2.5rem);
@@ -90,6 +91,7 @@
     }
     #address img{
         max-inline-size: 100px;
+        margin: 1rem 3rem;        
     }    
     #address{
         text-align: left;

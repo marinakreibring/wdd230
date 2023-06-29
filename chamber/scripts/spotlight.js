@@ -1,13 +1,45 @@
-const businessDir = 'json/data.json';
+let goldList = [
+    {
+        "name": "Empolis GmbH",        
+        "motto": "Fast problem solving with computing and enterprise AI",
+        "phone": "+49 631680370",
+        "web": "https://www.empolis.com",
+        "logo": "images/business/empolis-logo.png",
+        "level": "gold"           
+    },
+    {
+        "name": "FK Kraemer GmbH",
+        "motto": "We train YOU in civil engineering and road building!",
+        "phone": "+49 63154154",
+        "web": "https://www.fk-kraemer.de",
+        "logo": "images/business/kramer-logo.png",
+        "level": "gold"           
+    },
+    {
+        "name": "Human Solutions GmbH",
+        "motto": "We make ergonomics digital and your vehicles better",
+        "phone": "+49 631343593",
+        "web": "https://www.human-solutions.com",
+        "logo": "images/business/HumSol-logo.png",
+        "level": "gold"         
+    },
+    {
+        "name": "WIPOTEC GmbH",
+        "motto": "Innovation and passion for technology",
+        "phone": "+49 631341460",
+        "web": "https://www.wipotec.com",
+        "logo": "images/business/wipotec-logo.png",
+        "level": "gold"             
+    }
+]
 
-getBusinessData();
 
-async function getBusinessData(){
-    const response = await fetch(businessDir);
-    const data = await response.json();
-    
-    addSpotlight(data.business);
-}
+
+
+
+
+
+
 //add spotlights to div
 const addSpotlight = (business) => {
     const spotlight = document.querySelector("div.spotlight");

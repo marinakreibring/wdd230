@@ -17,16 +17,15 @@ body{
 header{
     background-color: #15295D;
     display: grid;
-    grid-template-columns: auto 40% auto auto;
+    grid-template-columns: 100px 30% auto auto;
     grid-template-rows: auto auto;
 }
 .logo{
-    max-inline-size: 80%;
-    block-size: auto;
+    max-inline-size: 60px;
     border-radius: 50%;
     border: 1px solid #fefefe;
     align-self: center;
-    margin: .5rem 2vw;
+    margin: 1rem;
 }
 #title{
     text-align: left; 
@@ -285,6 +284,9 @@ footer{
     display: block;
     text-align: center;
     border-top: 1px solid rgba(0,0,0,0.3);
+}
+#bold{
+    font-weight: bold;
 }
 /*css for discover page*/
 .discover img[data-src]{
