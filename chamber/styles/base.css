@@ -190,7 +190,7 @@ p.color{
     font-family: 'Hind', Arial, serif;
     padding: 2rem;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
-    background-color: lightskyblue;
+    background-color: rgb(179, 220, 247);
     text-align: center;
 }
 .weather{
