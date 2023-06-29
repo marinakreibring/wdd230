@@ -45,7 +45,7 @@
     }
     .gridView{
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto auto auto;        
+        grid-template-rows: repet(3, auto);        
     }
     .hero{
         grid-column-start: 2;
@@ -63,7 +63,7 @@
     .join{
         grid-row-start: 3;
         grid-column-start: 1;
-        height: 100%;
+        height: auto;
     }
     .news{
         grid-row-start: 3;
