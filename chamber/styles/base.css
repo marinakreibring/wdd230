@@ -327,11 +327,6 @@ table{
 .heading{
     border-bottom: 1px solid #fefefe;
 }
-tfoot{
-    background-color: #15295D;
-    color: #fefefe;
-    border-top: 1px solid #fefefe;
-}
 td{
     border-left: 1px solid lightskyblue;
     text-align: center;
@@ -344,24 +339,29 @@ th{
     padding: 1ch;
 }
 tr:nth-child(even) td{
-    background-color:  lightskyblue;
+    background-color:  rgb(179, 220, 247);
     border-left: 1px solid #fefefe;
 }
 #toph, #topd{
-    background-color: #c51a21;    
+    background-color: rgb(179, 220, 247);
+    color: #15295D;   
 }
-
+.tfoot{
+    background-color: #15295D;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+}
 /*css for the form*/
 form fieldset{
     margin: 1rem 0 2rem;
     padding: .5rem 2%;
-    background-color: #15295D;
-    border: 1px solid #15295D;
+    background-color: rgb(179, 220, 247);
+    border: 2px solid #15295D;
 }
 form label{
     display: block;
     padding-top: 1rem;
-    color: #fefefe;
+   
     font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1rem);
     font-family: 'Hind', Arial, serif;
 }
@@ -370,16 +370,16 @@ form label input, form label textarea, form label select{
     appearance: auto;
     display: block;
     font-size: 1rem;
-    border: 1px solid #fefefe;
-    border-radius: 4px;
+    border: 1px solid #15295D;
+    border-radius: 5px;
     padding: .75rem;
     width: 100%;
     background-color: #fefefe;
     color: #15295D;
 }
 form input.submitBtn{
-    border: none;
-    background-color: #c51a21;
+    border: 2px solid #fefefe;
+    background-color: #15295D;
     color: #fefefe;
     border-radius: 1rem;
     padding: .75rem 1.5rem;

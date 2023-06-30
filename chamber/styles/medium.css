@@ -89,6 +89,11 @@
     }
     .discover img{
         border: 4px ridge rgba(21, 41, 93, .9);
+        width: 50vw;
+    }
+    .discover p{
+        background-color: rgb(179, 220, 247);
+        margin-right: 0;
     }
     /*footer*/
     footer{
@@ -186,10 +191,10 @@
         background-size: cover;
         background-origin: border-box;
     }
-    #contact-grid h2{        
-        text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
+    #contact-grid h2 span{             
+        background: rgba(255, 255, 255, 0.3);
     }
-    .working p{        
-        text-shadow: 1px 1px 5px #fefefe, 0 0 3em #fefefe, 0 0 0.3em #fefefe;
+    .working p span{        
+        background: rgba(255, 255, 255, 0.3);
     }    
 }

@@ -46,7 +46,7 @@
     }
     .gridView{
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repet(3, auto);        
+        grid-template-rows: repeat(3, auto);        
     }
     .hero{
         grid-column-start: 2;
@@ -115,6 +115,16 @@
         margin-right: 1rem;
         transition: width 0.2s ease-out 0.5s, height 0.2s ease-out 0.5s, border-radius 0.2s ease-out 0.5s;        
     }
+    .discover{
+        justify-content: space-evenly;
+    }
+    .discover p{
+        align-self: center;
+        width: 30vw;
+        margin-right: 2rem;
+        border-radius: 20px 5px;
+        box-shadow: 0 0 2rem 2rem rgb(179, 220, 247);
+    }
     .discover img:hover{
         border-radius: 50px 0;
         width: 70vw;
@@ -127,8 +137,7 @@
     }
     form fieldset, table{
         margin: 1rem auto 2rem;
-        width: 80%;
-        
+        width: 80%;        
     }
     form label input, form label textarea, form label select{      
         padding: 5px;
