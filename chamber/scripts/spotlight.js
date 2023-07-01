@@ -68,4 +68,3 @@ document.querySelector("#tel3").textContent = `${goldList[h].phone}`;
 let web3 = document.querySelector("#web3");
 web3.innerHTML = `${goldList[h].web}`;            
 web3.setAttribute("href", `${goldList[h].web}`);
-
