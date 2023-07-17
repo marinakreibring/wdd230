@@ -1,0 +1,307 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Color palette= https://coolors.co/7d1617-f6b30f-a2bb19-c92017-213651*/
+@import url('');
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    margin: 2vw 2vw;
+    font-size: 16px;
+    line-height: 1.5;
+}
+header{
+    background-color: #a2bb19;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #7d1617;
+    align-self: center;
+    margin: 1rem;
+}
+#siteName{
+    display: none;
+}
+/*css for hamburger button in navigation*/
+nav button{
+    margin: auto 2rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #7d1617;
+}
+nav{
+    background-color: #a2bb19;
+    display: grid;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #fefefe;
+    font-family: 'Merriweather', Georgia, serif;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #7d1617;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background-color:  rgba(0,0,0,0.3);
+}
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display: block;
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+.slideshow, .order{
+    position: relative;
+    margin: 2rem 1rem 0;
+}
+/* I didn't use next and prev buttons, because I couldn't make slides change 
+both auto and manually. I left it here for future developing*/
+/*.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: #7d1617;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 50px;    
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;   
+} */
+.mySlides img, .order img, .about img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;    
+}
+.center{
+    display: block;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background-color: #f6b30f;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+.active, .dot:hover {
+    background-color: #a2bb19;
+}
+.makeFresh, .numbertext{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    padding: .5rem;
+    background-color: #f6b30f;
+    border-radius: 10px;
+    border: 2px solid #7d1617;
+    text-align: center;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1.5rem);
+    
+}
+.makeFresh a{
+    text-decoration: none;
+    color: black;
+}
+.makeFresh a:hover{
+    color: #f6b30f;
+}
+.makeFresh:hover{
+    background-color: #7d1617;
+    border: 2px solid #f6b30f;
+}
+main h1, h2, h3{
+    font-family: 'Lemon', Times, cursive;
+    color: #213651;
+    text-align: center;
+}
+main p{
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
+    padding: 1rem;
+}
+.order{
+    margin-bottom: 2rem;
+}
+.orderInfo{
+    text-align: center;
+}
+.orderInfo p{
+    border-radius: 10px;
+    background-color: #f6b30f;
+}
+#sector2{
+    margin-top: 3rem;
+}
+.weather{
+    box-shadow: inset 0 0 30px 20px #f6b30f;
+    margin: 2rem 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+#forecast{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#forecast p{
+    font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3rem);
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+}
+#forecast img{
+    width: 50%;
+    border-radius: 50%;
+}
+.weather p{
+    text-align: center;
+    font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
+    padding: .2rem;
+    margin: 0;
+}
+#condition{
+    text-transform: capitalize;
+}
+#forecastGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+#credits{
+    font-size: .8rem;
+}
+/*css for footer*/
+footer{
+    background-color: #a2bb19;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1rem);
+    display: flex;
+    flex-direction: column;
+}
+#address{    
+    text-align: center;
+    font-style: italic;
+}
+#contactInfo{    
+    text-align: center;
+}
+#social{    
+    display: flex;
+    flex-direction: row; 
+    align-self: center;    
+}
+#social a img{
+    max-width: 50px;
+    border: 1px solid white;   
+    margin: 1rem;
+}
+#copyright{
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+#bold{
+    font-weight: bold;
+}
+/*css for Fresh page*/
+/*css for the form*/
+form fieldset{
+    margin: 1rem 0 2rem;
+    padding: .5rem 2%;
+    border: 2px solid #7d1617;
+    border-radius: 10px;
+}
+form legend{
+    text-align: center;
+    padding: 1ch;
+    font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1rem);
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: bold;
+}
+form label{
+    display: block;
+    padding-top: 1rem;
+    font-size: clamp(0.6rem, 0.5rem + 1.5vw, 1rem);
+    font-family: 'Merriweather', Georgia, serif;
+}
+form label input, form label textarea, form label select{
+    -webkit-appearance: none;
+    appearance: auto;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #213651;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    
+}
+form input.submitBtn{
+    border: 2px solid #7d1617;
+    background-color: #f6b30f;
+    color: #7d1617;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 2%;
+    width: 96%;
+}
+form input.submitBtn:hover{
+    background-color: #7d1617;
+    color: #f6b30f;
+    border: 2px solid #f6b30f;
+}
+form label input:required{
+    border-left: 6px solid #7d1617;
+}
+form label input:required:valid{
+    border-left: 6px solid #a2bb19;
+}
+/*css for About Us page*/
+#aboutContact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#aboutContact p{
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1rem);
+    padding: 0;
+    text-align: center;
+}
+

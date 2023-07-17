@@ -1,0 +1,96 @@
+@media only screen and (min-width: 35rem){
+    header{
+        justify-content: space-around;
+    }
+    #siteName{
+        display: inline-block;
+        align-self: center;
+    }
+    #siteName h1{    
+        font-size: clamp(2rem, 0.75rem + 1.5vw, 2.5rem);  
+        font-family: 'Lemon', Times, cursive;
+        color: #7d1617;
+        text-align: center; 
+    }
+    .order{
+        display: flex;
+        flex-direction: row;
+    }
+    .order img{
+        width: 60%;
+        aspect-ratio: 3/2;
+        object-fit: cover; 
+        outline: 0.5rem solid #f6b30f;
+        border-radius: 10px;
+    }
+    .orderInfo {
+        outline: 0.5rem solid #f6b30f;
+        border-radius: 10px;
+        margin-left: 2rem;        
+    }
+    .orderInfo p{
+        background-color: transparent;       
+    }
+    #sector2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .weather{
+        /* fix the width issue */
+    }
+    /*footer*/
+    footer{
+        display: grid;
+        grid-template-columns: 130px auto auto;
+    }
+    #social, #copyright{
+        grid-column: span 3;
+    } 
+    #social{
+        justify-content: space-around;
+    }   
+    #copyright{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 2rem 2rem;
+        margin: .5rem 2vw;
+    }
+    #copyright p:nth-child(4){
+        grid-column: span 3;
+        text-align: center;
+    }
+    #copyright p{
+        align-self: center;
+    }
+    #bold{
+        border-left: 1px solid rgba(0,0,0,0.5);
+        border-right: 1px solid rgba(0,0,0,0.5);
+    }
+    /*css for the Fresh page*/
+    form fieldset{
+        margin: 1rem 10% 2rem;        
+    }
+    form label{
+        display: flex;
+        margin: 1rem;
+        text-align: left;
+        padding-top: 0.5rem;
+    }
+    form label input, form label textarea, form label select{      
+        margin: .5rem;
+        float: left;
+    }
+    form input.submitBtn{        
+        margin: 1rem 10% 2rem;
+        width: 80%;     
+    }
+    /* css for About us page */
+    #aboutContact{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }  
+    .about img{
+        width: 50vw;
+    }  
+}

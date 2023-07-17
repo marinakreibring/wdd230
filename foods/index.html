@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Bbountiful Foods | Home</title>
+    <meta name="description" content="Main page for Bountiful Foods company website">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&family=Lemon&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">     
+</head>
+<body>
+    
+	<header>
+        <a href="index.html">
+            <img class="logo" src="images/site-logo.png" alt="Company logo">
+        </a> 
+        <div id="siteName">
+            <h1>Bountiful Foods</h1>
+        </div>        
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About Us</a></li> 
+            </ul>
+        </nav>
+    </header>     
+    <!-- Sections should change in different layouts --> 
+    <main>
+        <h1>From our gardens to your table</h1>
+        <div id="sector1">
+            <div class="slideshow">
+                <div class="mySlides">
+                    <div class="numbertext">Juicy Fruit</div>
+                    <img src="images/fruit.webp" alt="fruit">
+                </div>      
+                <div class="mySlides">
+                    <div class="numbertext">Fresh Vegetables</div>
+                    <img src="images/vegetables.webp" alt="vegetables">
+                </div>      
+                <div class="mySlides">
+                    <div class="numbertext">Gift Boxes</div>
+                    <img src="images/gift-box.png" alt="box">
+                </div>      
+                <div class="mySlides">
+                    <div class="numbertext">Delicious Drinks</div>
+                    <img src="images/smoothie.webp" alt="smoothie">
+                </div>      
+                <div class="mySlides">
+                    <div class="numbertext">Healthy Snacks</div>
+                    <img src="images/snacks.webp" alt="snacks">
+                </div>
+                <!-- Next and previous buttons -->
+                <!--I didn't figure out how to make both manual and auto slide change, so I didn't use it-->
+                <!--I left it here for future developing-->
+                <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                <!--<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                <!--Thumbnail dots-->  
+                <div class="center">
+                    <span class="dot" onclick='currentSlide(1)'></span>
+                    <span class="dot" onclick='currentSlide(2)'></span>
+                    <span class="dot" onclick='currentSlide(3)'></span>
+                    <span class="dot" onclick='currentSlide(4)'></span>
+                    <span class="dot" onclick='currentSlide(5)'></span>
+                </div>  
+            </div>
+            <div class="order">
+                <img src="images/summer-smoothies.jpg" alt="fruitmix">
+                <div class="makeFresh"><a href="fresh.html">Make your drink!</a></div>
+                <div class="orderInfo">
+                    <p>You odered <span id="orders">?</span> drinks</p>
+                </div>                
+            </div>
+        </div>
+        <div id="sector2">  
+            <div class="area">
+                <h2>The Golden State</h2>
+                <p>California, otherwise known as 'The Golden State', offers plenty of sunshine and warm temperatures
+                     throughout most of the year. The state is divided into seven growing zones. 
+                     Much of California is home to a Mediterranean-like climate with warm summers and cool, wet winters. 
+                     However, there are also several places across the state that experience a dry, arid climate. 
+                     Aside from the challenging weather, most of the state will experience ideal temperatures for an extended growing season, averaging 270 frost-free days throughout the year. 
+                     It's no secret that the warmer climate of California is ideal for many plants to grow throughout the majority of the year.
+                </p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div id="forecast">
+                    <img src="" alt="" id="weather-icon">
+                    <p><span id="current-temp"></span> &deg;C </p>
+                </div>   
+                <p><span id="condition"></span></p>              
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Forecast:</p>
+                <div id="forecastGrid">
+                    <p><span id="day1"></span></p>
+                    <p><span id="day2"></span></p>
+                    <p><span id="day3"></span></p>
+                    <P><span id="temp1"></span> &deg;C</P>
+                    <P><span id="temp2"></span> &deg;C</P>
+                    <P><span id="temp3"></span> &deg;C</P>
+                </div>
+                <hr>
+                <p id="credits">Information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+            </div>
+        </div>
+            
+    </main>
+    <!-- footer for the site plus my usual footer -->   
+    <footer>
+        <a href="index.html">
+            <img class="logo" src="images/site-logo.png" alt="Company logo">
+        </a> 
+        <div id="address">
+            <p>Southbeach 14,</p>
+            <p>67657 Carlsbad, USA</p>
+        </div>
+        <div id="contactInfo">
+            <p>&#9993; info@bfoods.com</p>
+            <p>&#9990; +1 800 135790</p>
+        </div>
+        <div id="social">
+            <a href="https://vk.com" target="_blank">
+               <img src="images/LogoVK.png" alt="vk icon">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="currYear"></span></p>
+            <p id="bold">Marina Kreibring</p>
+            <p>WDD 230 Project</p>
+            <p>Last updated: <span id="updated"></span></p>            
+        </div>        
+    </footer>
+ <!-- reference to scripts -->   
+<script src="scripts/script.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/slideshow.js"></script>
+<script src="scripts/forecast.js"></script>
+</body>
+</html>
