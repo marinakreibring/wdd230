@@ -123,13 +123,18 @@ function storeOrder(){
 }
 //activate functions by submit button
 
-document.getElementById("submitBtn").addEventListener("click", () => {
-    const form = document.getElementById("orderForm");
-    const orderDetails = document.getElementById("output");
-    form.addEventListener('submit', handleSubmit);
-});
+const form = document.getElementById("orderForm");
+const orderDetails = document.getElementById("output");
+form.addEventListener('submit', handleSubmit);
+
+
 function handleSubmit(event){
     orderDetails.innerHTML = `${createOutput()}`;
     event.preventDefault();
 }
+//document.getElementById("submitBtn").addEventListener("click", () => {
+    //const form = document.getElementById("orderForm");
+    //const orderDetails = document.getElementById("output");
+    //form.addEventListener('submit', handleSubmit);
+//});
 

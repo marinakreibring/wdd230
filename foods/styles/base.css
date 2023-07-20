@@ -298,3 +298,9 @@ form label input:required:valid{
     padding: 0;
     text-align: center;
 }
+.location{
+    color: black;
+}
+.location:hover{
+    color: #7d1617;
+}
