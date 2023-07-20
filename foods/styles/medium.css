@@ -1,7 +1,4 @@
 @media only screen and (min-width: 35rem){
-    header{
-        justify-content: space-around;
-    }
     #siteName{
         display: inline-block;
         align-self: center;
@@ -18,12 +15,10 @@
     }
     .order img{
         width: 60%;
-        aspect-ratio: 3/2;
-        object-fit: cover; 
         outline: 0.5rem solid #f6b30f;
         border-radius: 10px;
     }
-    .orderInfo {
+    .orderInfo{
         outline: 0.5rem solid #f6b30f;
         border-radius: 10px;
         margin-left: 2rem;        
@@ -31,12 +26,8 @@
     .orderInfo p{
         background-color: transparent;       
     }
-    #sector2{
-        display: flex;
-        flex-direction: row-reverse;
-    }
     .weather{
-        /* fix the width issue */
+        float:left;
     }
     /*footer*/
     footer{

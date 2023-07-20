@@ -17,4 +17,4 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // change picture in 3 seconds
 }
-//I wanted to make the slide show both auto and manual, but messed it up, so I will work on it in the future
+//I wanted to make the slide show both auto and manual, but messed it up and had no time to fix it, so I will work on it in the future

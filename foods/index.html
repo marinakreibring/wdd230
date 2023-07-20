@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Bbountiful Foods | Home</title>
+    <title>Bountiful Foods | Home</title>
     <meta name="description" content="Main page for Bountiful Foods company website">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lato:ital,wght@1,700&family=Lemon&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Merriweather&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">     
 </head>
-<body>
-    
+<body>    
 	<header>
         <a href="index.html">
             <img class="logo" src="images/site-logo.png" alt="Company logo">
@@ -31,36 +30,32 @@
             </ul>
         </nav>
     </header>     
-    <!-- Sections should change in different layouts --> 
     <main>
         <h1>From our gardens to your table</h1>
         <div id="sector1">
             <div class="slideshow">
-                <div class="mySlides">
+                <div class="mySlides fading">
                     <div class="numbertext">Juicy Fruit</div>
                     <img src="images/fruit.webp" alt="fruit">
                 </div>      
-                <div class="mySlides">
+                <div class="mySlides fading">
                     <div class="numbertext">Fresh Vegetables</div>
                     <img src="images/vegetables.webp" alt="vegetables">
                 </div>      
-                <div class="mySlides">
+                <div class="mySlides fading">
                     <div class="numbertext">Gift Boxes</div>
-                    <img src="images/gift-box.png" alt="box">
+                    <img src="images/gift-box.webp" alt="box">
                 </div>      
-                <div class="mySlides">
+                <div class="mySlides fading">
                     <div class="numbertext">Delicious Drinks</div>
                     <img src="images/smoothie.webp" alt="smoothie">
                 </div>      
-                <div class="mySlides">
+                <div class="mySlides fading">
                     <div class="numbertext">Healthy Snacks</div>
                     <img src="images/snacks.webp" alt="snacks">
                 </div>
-                <!-- Next and previous buttons -->
-                <!--I didn't figure out how to make both manual and auto slide change, so I didn't use it-->
+                <!--I didn't figure out how to make both manual and auto slide change, so onclick doesn't work-->
                 <!--I left it here for future developing-->
-                <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-                <!--<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                 <!--Thumbnail dots-->  
                 <div class="center">
                     <span class="dot" onclick='currentSlide(1)'></span>
@@ -74,21 +69,12 @@
                 <img src="images/summer-smoothies.jpg" alt="fruitmix">
                 <div class="makeFresh"><a href="fresh.html">Make your drink!</a></div>
                 <div class="orderInfo">
-                    <p>You odered <span id="orders">?</span> drinks</p>
+                    <p>You odered <span id="orders"></span> drinks</p>
                 </div>                
             </div>
         </div>
-        <div id="sector2">  
-            <div class="area">
-                <h2>The Golden State</h2>
-                <p>California, otherwise known as 'The Golden State', offers plenty of sunshine and warm temperatures
-                     throughout most of the year. The state is divided into seven growing zones. 
-                     Much of California is home to a Mediterranean-like climate with warm summers and cool, wet winters. 
-                     However, there are also several places across the state that experience a dry, arid climate. 
-                     Aside from the challenging weather, most of the state will experience ideal temperatures for an extended growing season, averaging 270 frost-free days throughout the year. 
-                     It's no secret that the warmer climate of California is ideal for many plants to grow throughout the majority of the year.
-                </p>
-            </div>
+        <h1>The Golden State</h1>
+        <div id="sector2"> 
             <div class="weather">
                 <h2>Weather</h2>
                 <div id="forecast">
@@ -109,10 +95,22 @@
                 <hr>
                 <p id="credits">Information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
             </div>
-        </div>
-            
+            <div class="area">
+                <p>California, otherwise known as 'The Golden State', offers plenty of sunshine and warm temperatures
+                     throughout most of the year. The state is divided into seven growing zones. 
+                     Much of California is home to a Mediterranean-like climate with warm summers and cool, wet winters. 
+                     However, there are also several places across the state that experience a dry, arid climate. 
+                     Aside from the challenging weather, most of the state will experience ideal temperatures for an extended growing season, averaging 270 frost-free days throughout the year. 
+                     It's no secret that the warmer climate of California is ideal for many plants to grow throughout the majority of the year.
+                </p>
+                <p>Coastal California is heavily influenced by east-west distances to the cold California Current (dominated by it) and microclimates due to hills and coast ranges. 
+                    Summer and winter temperatures other than occasional heat waves are heavily moderated by ocean currents and fog with strong Seasonal lags 
+                    compared to interior valleys as little as 16 km away.
+                </p>
+            </div>
+        </div>            
     </main>
-    <!-- footer for the site plus my usual footer -->   
+    <!-- footer for the site plus copyright -->   
     <footer>
         <a href="index.html">
             <img class="logo" src="images/site-logo.png" alt="Company logo">
@@ -148,5 +146,6 @@
 <script src="scripts/weather.js"></script>
 <script src="scripts/slideshow.js"></script>
 <script src="scripts/forecast.js"></script>
+<script src="scripts/ordercard.js"></script>
 </body>
 </html>

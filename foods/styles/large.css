@@ -26,6 +26,9 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    #sector2{
+        overflow: hidden;
+    }
     .makeFresh, .numbertext{
         left: 1rem;
         top: 1rem;
@@ -38,8 +41,7 @@
         width: 50vw;   
     }
     .order img{
-        width: 30vw;
-        
+        width: 30vw;        
     }
     .orderInfo {
         margin-left: 0;  
@@ -47,32 +49,35 @@
     }
     /* footer */
     footer{
-        grid-template-columns: 130px auto auto auto;
+        grid-template-columns: 200px auto auto auto;
     }
     #social{
         grid-column: 4/5;
     }
     #copyright{
         grid-column: span 4;
-    }
-    
-    #copyright{
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 2rem;
     }
     #copyright p:nth-child(4){
         grid-column: 4;
         border-left: 1px solid rgba(0,0,0,0.5);
-    }
-    
-    /*css for join page*/
-    #joinPage{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    form fieldset, table{
+    }    
+    /*css for Fresh page*/
+    #fresh{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: url("../images/summer-smoothies.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-origin: border-box;
+        margin-bottom: 2rem;
+    }  
+    form fieldset{
         margin: 1rem auto 2rem;
-        width: 80%;        
+        background-color: rgba(255, 255, 255, 0.5);       
     }
     form label input, form label textarea, form label select{      
         padding: 5px;
@@ -81,23 +86,11 @@
         margin: .5rem 20% 1.5rem;
         width: 60%;     
     }
-    th{
-        padding: 1rem;
+    #output{
+        background-color: rgba(255, 255, 255, 0.5);
     }
-    tfoot th{
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    /*css for directory page list view*/    
-    .list section{
-        grid-template-columns: 20% 1fr 1fr 1fr;        
-    }
-    .list section p:nth-child(3){
-        display: block;
-    }
-    /*css for contact page*/
-    #contactForm fieldset{
-        width: 50vw;
-        margin: 0 0 1rem;
+    /* css for about page */
+    .about img{
+        width: 30vw;
     } 
 }

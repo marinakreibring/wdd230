@@ -1,7 +1,7 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* Color palette= https://coolors.co/7d1617-f6b30f-a2bb19-c92017-213651*/
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Merriweather&display=swap');
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 body{
     margin: 2vw 2vw;
@@ -12,14 +12,14 @@ header{
     background-color: #a2bb19;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .logo{
+    display: block;
     width: 80px;
     border-radius: 50%;
     border: 2px solid #7d1617;
-    align-self: center;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 #siteName{
     display: none;
@@ -46,12 +46,12 @@ nav ul li a{
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #fefefe;
+    color: black;
     font-family: 'Merriweather', Georgia, serif;
     border-top: 1px solid rgba(0,0,0,0.5);
 }
 nav ul li.active a{
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     color: #7d1617;
     font-weight: bold;
 }
@@ -80,35 +80,24 @@ nav ul.open{
     position: relative;
     margin: 2rem 1rem 0;
 }
-/* I didn't use next and prev buttons, because I couldn't make slides change 
-both auto and manually. I left it here for future developing*/
-/*.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 10px;
-    margin-top: -50px;
-    color: #7d1617;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 50px;    
-    user-select: none;
-    -webkit-user-select: none;
-}
-.next {
-    right: 0;   
-} */
 .mySlides img, .order img, .about img{
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: cover;    
 }
+.fading{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from{opacity: .5;}
+    to{opacity: 1;}
+  }
 .center{
     display: block;
     text-align: center;
 }
-.dot {
+.dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -118,7 +107,7 @@ both auto and manually. I left it here for future developing*/
     display: inline-block;
     transition: background-color .6s ease
 }
-.active, .dot:hover {
+.active, .dot:hover{
     background-color: #a2bb19;
 }
 .makeFresh, .numbertext{
@@ -131,8 +120,7 @@ both auto and manually. I left it here for future developing*/
     border: 2px solid #7d1617;
     text-align: center;
     font-family: 'Merriweather', Georgia, serif;
-    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1.5rem);
-    
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1.5rem);    
 }
 .makeFresh a{
     text-decoration: none;
@@ -140,6 +128,7 @@ both auto and manually. I left it here for future developing*/
 }
 .makeFresh a:hover{
     color: #f6b30f;
+    background-color: #7d1617;
 }
 .makeFresh:hover{
     background-color: #7d1617;
@@ -153,7 +142,7 @@ main h1, h2, h3{
 main p{
     font-family: 'Merriweather', Georgia, serif;
     font-size: clamp(0.8rem, 0.75rem + 1.5vw, 1.5rem);
-    padding: 1rem;
+    padding: .5rem 1ch;
 }
 .order{
     margin-bottom: 2rem;
@@ -165,12 +154,12 @@ main p{
     border-radius: 10px;
     background-color: #f6b30f;
 }
-#sector2{
-    margin-top: 3rem;
+#sector1, #sector2{
+    margin-bottom: 3rem;
 }
 .weather{
     box-shadow: inset 0 0 30px 20px #f6b30f;
-    margin: 2rem 1rem;
+    margin: 1rem;
     padding: .5rem;
     border-radius: 10px;
 }
@@ -188,6 +177,7 @@ main p{
 #forecast img{
     width: 50%;
     border-radius: 50%;
+    background-color: lightcyan;
 }
 .weather p{
     text-align: center;
@@ -215,6 +205,9 @@ footer{
     display: flex;
     flex-direction: column;
 }
+footer img.logo{
+    justify-self: center;
+}
 #address{    
     text-align: center;
     font-style: italic;
@@ -240,8 +233,7 @@ footer{
 #bold{
     font-weight: bold;
 }
-/*css for Fresh page*/
-/*css for the form*/
+/*css for the form on Fresh page*/
 form fieldset{
     margin: 1rem 0 2rem;
     padding: .5rem 2%;
@@ -269,8 +261,7 @@ form label input, form label textarea, form label select{
     border: 1px solid #213651;
     border-radius: 5px;
     padding: .75rem;
-    width: 100%;
-    
+    width: 100%;    
 }
 form input.submitBtn{
     border: 2px solid #7d1617;
@@ -293,6 +284,9 @@ form label input:required{
 form label input:required:valid{
     border-left: 6px solid #a2bb19;
 }
+#output{
+    border-radius: 10px;
+}
 /*css for About Us page*/
 #aboutContact{
     display: flex;
@@ -300,8 +294,7 @@ form label input:required:valid{
     margin-bottom: 2rem;
 }
 #aboutContact p{
-    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1rem);
+    font-size: clamp(0.5rem, 0.75rem + 1.5vw, 1.5rem);
     padding: 0;
     text-align: center;
 }
-

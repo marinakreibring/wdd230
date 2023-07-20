@@ -24,8 +24,7 @@ apiFetch();
 function  displayResults(weatherData) {
     currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
     humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
-    
-    
+        
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
   
