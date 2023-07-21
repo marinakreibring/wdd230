@@ -5,6 +5,7 @@ async function getFruitData(){
     const response = await fetch(fruitList);
     const data = await response.json();    
     displayFruitData(data);
+    getNutritionData(data);
 }
 //add option elements to the form 3 times (probably there is a better way to  do it, but I didn't have time to find the way, I'll think about it later)
 const displayFruitData = (fruits) => {
@@ -30,111 +31,71 @@ const displayFruitData = (fruits) => {
         select3.appendChild(option);
     });
 }
-const getNutritionData = (json, fruits) => {
-    //calculate nutrition 
-    let carbs = 0;
-    let prot = 0;
-    let fat = 0;
-    let sugar = 0;
-    let cal = 0;
-    //const fruit1 = document.getElementById("ingredient1")
-    //const fruit2 = document.getElementById("ingredient2");
-    //const fruit3 = document.getElementById("ingredient3");
-    //const chosenFruit = [fruit1, fruit2, fruit3];
-
-    //const optionFruit = document.querySelectorAll("select[id^='fruit']");
-    //optionFruit.forEach(select => {
-        //const chosenFruit = fruits.find(fruit => fruit.name === select.value);
-        //if (chosenFruit) {
-            //carbs += chosenFruit.nutritions.carbohydrates;
-            //prot += chosenFruit.nutritions.protein;
-            //fat += chosenFruit.nutritions.fat;
-            //sugar += chosenFruit.nutritions.sugar;
-            //cal += chosenFruit.nutritions.calories;
-        //}
-    //});
-
-    fruits.forEach(fruit => {
-        json.forEach(item => {
-            if(item.name == fruit){
-                carbs += item.nutritions.carbohydrates;
-                prot += item.nutritions.protein;
-                fat += item.nutritions.fat;
-                sugar += item.nutritions.sugar;
-                cal += item.nutritions.calories;
-
+async function createOutputForm(){
+    function getNutritionData(fruits){
+        //calculate nutrition 
+        let carbs = 0;
+        let prot = 0;
+        let fat = 0;
+        let sugar = 0;
+        let cal = 0;
+        const fruit1 = document.getElementById("ingredient1").value;
+        const fruit2 = document.getElementById("ingredient2").value;
+        const fruit3 = document.getElementById("ingredient3").value;
+        const chosenFruit = [fruit1, fruit2, fruit3];
+        chosenFruit.forEach(fruitName => {
+        const fruit = fruits.find(fruit => fruit.name === fruitName);
+        if (fruit) {
+            carbs += fruit.nutritions.carbohydrates;
+            prot += fruit.nutritions.protein;
+            fat += fruit.nutritions.fat;
+            sugar += fruit.nutritions.sugar;
+            cal += fruit.nutritions.calories;
             }
-        });
-    });
+        });  
+        return{
+            carbs,
+            prot,
+            fat,
+            sugar,
+            cal
+        }
+    }
+    const nutritionData = getNutritionData();
+    //create order summary output
+    const output = `
+        <h3>Thank you for the order!</h3>
+        <p>Your order details are:</p>      
+        <p><strong>Your Name:</strong> ${document.querySelector('input[name="name"]').value}</p>
+        <p><strong>Your Email:</strong> ${document.querySelector('input[name="email"]').value}</p>
+        <p><strong>Your Phone Number:</strong> ${document.querySelector('input[name="phone"]').value}</p>
+        <p><strong>Your Chosen Fruit:</strong> ${document.getElementById("ingredient1").value}, ${document.getElementById("ingredient2").value}, ${document.getElementById("ingredient2").value}</p>
+        <h2><strong>Your Instructions:</strong> ${document.querySelector('textarea[name="instructions"]').value}</h2>
+        <p><strong>Total Nutrition:</strong></p>
+        <p><strong>Carbohydrates:</strong> ${nutritionData.carbs.toFixed(1)}g</p>
+        <p><strong>Protein:</strong> ${nutritionData.protein.toFixed(1)}g</p>
+        <p><strong>Fat:</strong> ${nutritionData.fat.toFixed(1)}g</p>
+        <p><strong>Sugar:</strong> ${nutritionData.sugar.toFixed(1)}g</p>
+        <p><strong>Calories:</strong> ${nutritionData.cal.toFixed(0)}kcal</p>
+        <p><strong>Order Date:</strong> ${new Date().toLocaleString('en-US')}</p> `;
+      
+    // Display the output
+    document.getElementById("output").innerHTML = output;
+
     
-    return{
-        carbs,
-        prot,
-        fat,
-        sugar,
-        cal
+    //save order information
+    storeOrder();
+    function storeOrder(){
+        const store = localStorage;
+        if ("numberOrders" in store){
+            const orders = store.getItem("numberOrders");
+            store.setItem("numberOrders", orders*1+1);
+        }
+        else{        
+            store.setItem("numberOrders", "1")
+        }
     }
+       
 };
-const nutritionData = getNutritionData();
-//create order summary output
-function createOutput(){
-    //document.getElementById("output").innerHTML = ""; //to start with the new document
-    const form = document.getElementById("output");
-    const thankyou = document.createElement("h3");
-    const note = document.createElement("p");
-    const customer = document.createElement("p");
-    const email = document.createElement("p");
-    const phone = document.createElement("p");
-    const fruit = document.createElement("p");
-    const instructions = document.createElement("p");
-    const date = document.createElement("p")
-    const nutrition = document.createElement("p");
-    //fill the elements
-    thankyou.textContent = `Thank you for the order!`;
-    note.textContent = `Your order details are:`;
-    customer.innerHTML = `Your Name:  ${document.querySelector('input[name="name"]').value}`;
-    email.innerHTML = `Your e-mail: ${document.querySelector('input[name="email"]').value}`;
-    phone.innerHTML = `Your phone number: ${document.querySelector('input[name="phone"]').value}`;
-    fruit.innerHTML = `Your chosen fruit: ${document.getElementById("ingredient1").value}, ${document.getElementById("ingredient2").value}, ${document.getElementById("ingredient2").value}`;
-    instructions.innerHTML = `Your instructions:${document.querySelector('textarea[name="instructions"]').value} `;
-    date.innerHTML = `Order date: ${new Date().toLocaleString('en-US')}`;   
-    nutrition.innerHTML = `Nutrition - Carbohydrates: ${nutritionData.carbs.toFixed(1)}, Protein: ${nutritionData.protein.toFixed(1)}, Fat: ${nutritionData.fat.toFixed(1)}, Sugar: ${nutritionData.sugar.toFixed(1)},Calories: ${nutritionData.cal.toFixed(0)} `;
-    //add elements to section
-    form.appendChild(thankyou);
-    form.appendChild(note);
-    form.appendChild(customer);
-    form.appendChild(email);
-    form.appendChild(phone);
-    form.appendChild(fruit);
-    form.appendChild(instructions);
-    form.appendChild(date);
-    form.appendChild(nutrition)
-};
-//save order information
-function storeOrder(){
-    const store = localStorage;
-    if ("numberOrders" in store){
-        const orders = store.getItem("numberOrders");
-        store.setItem("numberOrders", orders*1+1);
-    }
-    else{        
-        store.setItem("numberOrders", "1")
-    }
-}
-//activate functions by submit button
-
-const form = document.getElementById("orderForm");
-const orderDetails = document.getElementById("output");
-form.addEventListener('submit', handleSubmit);
-
-
-function handleSubmit(event){
-    orderDetails.innerHTML = `${createOutput()}`;
-    event.preventDefault();
-}
-//document.getElementById("submitBtn").addEventListener("click", () => {
-    //const form = document.getElementById("orderForm");
-    //const orderDetails = document.getElementById("output");
-    //form.addEventListener('submit', handleSubmit);
-//});
-
+//activate function by submit button
+document.querySelector("#orderDrink").addEventListener("click", createOutputForm);

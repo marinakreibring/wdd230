@@ -34,7 +34,7 @@
         <h1>Make a Drink to Your Taste</h1>
         <div id="fresh">        
             <div id="form">
-                <form id="orderForm" onsubmit="handleSubmit">                
+                <form id="orderForm">                
                     <fieldset><legend>Fill the order form</legend>
                         <label>Name*<input type="text" name="name" required></label>
                         <label>Email*<input type="email" name="email" placeholder="someone@email.xyz" required></label>
@@ -60,7 +60,7 @@
                         </label>
                         <label>Special Instructions<textarea name="instructions"></textarea></label>
                         <input type="hidden" name="timestamp" value="">
-                        <input type="submit" value="Order" class="submitBtn">
+                        <input type="submit" id="orderDrink" value="Order" class="submitBtn">
                     </fieldset>                
                 </form>
             </div>
