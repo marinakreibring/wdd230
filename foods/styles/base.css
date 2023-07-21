@@ -286,6 +286,11 @@ form label input:required:valid{
 }
 #output{
     border-radius: 10px;
+    align-self: center;
+    padding: 1rem;
+}
+#output p{
+    line-height: 0;
 }
 /*css for About Us page*/
 #aboutContact{

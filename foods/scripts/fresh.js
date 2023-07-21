@@ -72,18 +72,18 @@ async function createOutputForm(){
     //create order summary output
     const output = `
         <h3>Thank you for the order!</h3>
-        <p>Your order details are:</p>      
+        <h3>Your order details are:</h3>      
         <p><strong>Your Name:</strong> ${name}</p>
         <p><strong>Your Email:</strong> ${email}</p>
         <p><strong>Your Phone Number:</strong> ${phone}</p>
         <p><strong>Your Chosen Fruit:</strong> ${fruit1}, ${fruit2}, ${fruit3}</p>
-        <h2><strong>Your Instructions:</strong> ${instructions}</h2>
-        <p><strong>Total Nutrition:</strong></p>
-        <p><strong>Carbohydrates:</strong> ${carbs.toFixed(1)}g</p>
-        <p><strong>Protein:</strong> ${prot.toFixed(1)}g</p>
-        <p><strong>Fat:</strong> ${fat.toFixed(1)}g</p>
-        <p><strong>Sugar:</strong> ${sugar.toFixed(1)}g</p>
-        <p><strong>Calories:</strong> ${cal.toFixed(0)}kcal</p>
+        <p><strong>Your Instructions:</strong> ${instructions}</p>
+        <h3>Total Nutrition:</h3>
+        <p><strong>Carbohydrates:</strong> ${carbs.toFixed(1)} g</p>
+        <p><strong>Protein:</strong> ${prot.toFixed(1)} g</p>
+        <p><strong>Fat:</strong> ${fat.toFixed(1)} g</p>
+        <p><strong>Sugar:</strong> ${sugar.toFixed(1)} g</p>
+        <p><strong>Calories:</strong> ${cal.toFixed(0)} kcal</p>
         <p><strong>Order Date:</strong> ${date}</p> `;
       
     // Display the output
@@ -99,8 +99,7 @@ async function createOutputForm(){
         else{        
             store.setItem("numberOrders", "1")
         }
-    }
-       
+    }       
 };
 //activate function by submit button
 document.querySelector("#orderDrink").addEventListener("click", createOutputForm);
