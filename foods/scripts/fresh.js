@@ -31,7 +31,7 @@ const displayFruitData = (fruits) => {
     });
 }
 async function createOutputForm(){
-    console.log("here");
+    console.log("here")
     //set values    
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
@@ -71,7 +71,7 @@ async function createOutputForm(){
     console.log(carbs,prot,fat,sugar,cal);   
     //create order summary output
     const output = `
-        <h3>Thank you for the order!</h3>
+        <h2>Thank you for the order!</h2>
         <h3>Your order details are:</h3>      
         <p><strong>Your Name:</strong> ${name}</p>
         <p><strong>Your Email:</strong> ${email}</p>
@@ -84,7 +84,7 @@ async function createOutputForm(){
         <p><strong>Fat:</strong> ${fat.toFixed(1)} g</p>
         <p><strong>Sugar:</strong> ${sugar.toFixed(1)} g</p>
         <p><strong>Calories:</strong> ${cal.toFixed(0)} kcal</p>
-        <p><strong>Order Date:</strong> ${date}</p> `;
+        <p><i>Order Date: ${date}</i></p> `;
       
     // Display the output
     document.getElementById("output").innerHTML = output;

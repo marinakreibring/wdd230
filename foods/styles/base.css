@@ -287,10 +287,12 @@ form label input:required:valid{
 #output{
     border-radius: 10px;
     align-self: center;
-    padding: 1rem;
+    margin: 1rem;
+    padding: 0 1rem;
 }
 #output p{
-    line-height: 0;
+    line-height: 1;
+    padding: 0;
 }
 /*css for About Us page*/
 #aboutContact{
