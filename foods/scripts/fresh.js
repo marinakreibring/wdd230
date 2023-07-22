@@ -40,7 +40,7 @@ async function createOutputForm(){
     const fruit2 = document.getElementById("ingredient2").value;
     const fruit3 = document.getElementById("ingredient3").value;
     const instructions = document.querySelector('textarea[name="instructions"]').value;
-    const date = new Date().toDateString();
+    const date = new Date().toLocaleDateString("en-UK");
     //calculate nutrition
     let data
     try {
